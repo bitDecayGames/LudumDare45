@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "02e95228-5730-41e3-8600-6ebfcf2103e0",
+            "Value": {
+                "id": "152564d4-b3dd-4d39-8a96-5528b8e63e56",
+                "resourcePath": "sprites\/sp_characterSelectPrompt\/sp_characterSelectPrompt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0d92053f-9678-4c5d-b553-67a22b8a87e7",
             "Value": {
                 "id": "96b61d93-e4e1-4bf1-ab04-2ec2f5ccc052",
@@ -44,6 +52,22 @@
                 "id": "1fc5e868-b9e1-4816-bdc6-e4fded7b7e6c",
                 "resourcePath": "views\/12d4bd69-acf8-4e39-b02b-35b06a3458eb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "187c1a99-65ed-48b5-a31d-6963cbe897b3",
+            "Value": {
+                "id": "7ef550bc-57fa-46e2-8e81-dc6fda3b0041",
+                "resourcePath": "sprites\/sp_characterSelectPortrait\/sp_characterSelectPortrait.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "205de99d-08a9-423f-b057-6e1c441e8eed",
+            "Value": {
+                "id": "6ab6cb2f-016e-4c17-a939-19ad31c44c19",
+                "resourcePath": "objects\/o_characterSelectPrompt\/o_characterSelectPrompt.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -119,6 +143,14 @@
             }
         },
         {
+            "Key": "66ff3cdc-ef15-468c-b50e-b0b06faabd2b",
+            "Value": {
+                "id": "59490d78-ed80-494a-8ec7-953d3e342160",
+                "resourcePath": "objects\/o_characterSelectPanel\/o_characterSelectPanel.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6867d272-2e56-4c7a-b18e-ebab4cccc0c4",
             "Value": {
                 "id": "24dcc145-3d00-469f-a2af-721c328e094c",
@@ -148,6 +180,14 @@
                 "id": "78b9372f-7a92-496e-be1d-4334d4ad0a90",
                 "resourcePath": "objects\/o_mainMenu\/o_mainMenu.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "918a236a-80e9-4388-a38e-bb0a6f18c296",
+            "Value": {
+                "id": "640b4860-8784-4d20-b3ad-a7e69dd1a932",
+                "resourcePath": "sprites\/sp_characterSelectPanel\/sp_characterSelectPanel.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -220,6 +260,14 @@
                 "id": "37c128e4-fde7-4e0d-9cf6-a17aefef80d0",
                 "resourcePath": "views\/d716bb40-e5d9-450a-8fca-f3546c511d6e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "eca291a6-61d4-45af-a9f8-41ee32fb7aef",
+            "Value": {
+                "id": "506438bc-246f-484d-93fa-2c76d978e634",
+                "resourcePath": "objects\/o_characterSelectPortrait\/o_characterSelectPortrait.yy",
+                "resourceType": "GMObject"
             }
         },
         {
