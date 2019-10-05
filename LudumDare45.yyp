@@ -47,6 +47,22 @@
             }
         },
         {
+            "Key": "26bf2219-9147-48df-ad69-1d002d5d3516",
+            "Value": {
+                "id": "de7d5466-3db2-4de0-9242-4241410791e0",
+                "resourcePath": "rooms\/rm_TournamentResults\/rm_TournamentResults.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "28290fe5-a6c4-4d9e-b36a-00ffa0b04acc",
+            "Value": {
+                "id": "81238376-66a9-4539-b616-cb62c1faa880",
+                "resourcePath": "rooms\/rm_RaceResults\/rm_RaceResults.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "39c9ffdb-a05d-42e6-a611-ab866b5544a4",
             "Value": {
                 "id": "bcd39050-b6f7-4ec6-aa10-6a65530b37bd",
@@ -100,6 +116,22 @@
                 "id": "c913eb28-0e39-4c5e-9371-5b24cb4c5040",
                 "resourcePath": "views\/58312159-a169-4359-8e1a-dbb9cf5cc26f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6867d272-2e56-4c7a-b18e-ebab4cccc0c4",
+            "Value": {
+                "id": "24dcc145-3d00-469f-a2af-721c328e094c",
+                "resourcePath": "rooms\/rm_Credits\/rm_Credits.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "73fec724-d89c-4b0a-95af-d94794a8fe5c",
+            "Value": {
+                "id": "15804723-d028-495a-b55b-e496ee96dc52",
+                "resourcePath": "rooms\/rm_PlayerSelect\/rm_PlayerSelect.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -167,6 +199,14 @@
             }
         },
         {
+            "Key": "bdb180db-d5e7-4d53-a25b-3661d0e40e0e",
+            "Value": {
+                "id": "8f28f79b-b488-46d3-a49d-710dc113f963",
+                "resourcePath": "rooms\/rm_Game\/rm_Game.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "baa09520-155c-4671-b362-c72789c24ba3",
@@ -180,6 +220,14 @@
                 "id": "37c128e4-fde7-4e0d-9cf6-a17aefef80d0",
                 "resourcePath": "views\/d716bb40-e5d9-450a-8fca-f3546c511d6e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f1e07984-ee14-4ef2-8b90-b7d693c95b1f",
+            "Value": {
+                "id": "97052f42-e891-4fa9-8e1a-bf5bde047840",
+                "resourcePath": "rooms\/rm_Shop\/rm_Shop.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
