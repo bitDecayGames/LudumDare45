@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01663172-58e3-47a0-a473-6ee06a95a283",
+            "Value": {
+                "id": "60bee6f3-a2a8-4c7f-9aa7-b62d0930c960",
+                "resourcePath": "objects\/o_characterSelectCar\/o_characterSelectCar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "02e95228-5730-41e3-8600-6ebfcf2103e0",
             "Value": {
                 "id": "152564d4-b3dd-4d39-8a96-5528b8e63e56",
@@ -196,6 +204,14 @@
                 "id": "78b9372f-7a92-496e-be1d-4334d4ad0a90",
                 "resourcePath": "objects\/o_mainMenu\/o_mainMenu.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "8c06bc79-2c95-4431-ae1e-d0349169d2af",
+            "Value": {
+                "id": "6325f627-2868-4e96-9a01-a799499bd018",
+                "resourcePath": "sprites\/sp_characterSelectCar\/sp_characterSelectCar.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

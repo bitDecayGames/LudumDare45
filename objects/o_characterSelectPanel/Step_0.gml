@@ -6,6 +6,8 @@ if (!hasActivePlayer) {
 	if (becomeKeyboard || becomeGamepad > 0) {
 		
 		hasActivePlayer = true;
+		portraitObjId.visible = hasActivePlayer;
+		carObjId.visible = hasActivePlayer;
 		if (becomeKeyboard) {
 			image_index = 3; // show keyboard prompts
 		} else {
@@ -13,16 +15,16 @@ if (!hasActivePlayer) {
 		}
 		
 		playerName = sc_random_character_name();
-		
-		with(portraitObjId) {
-			//other.visible = true; // should only be visible if this panel has an active player
-		}
+		// TODO: get random portrait index
+		// TODO: pick car color
 	}
 } else {
 	var exitKeyboard = keyboard_check_pressed(ord("B")) && slot == 0;
 	var exitGamepad = gamepad_button_check_pressed(slot, gp_face2);
 	if (exitKeyboard || exitGamepad) {
 		hasActivePlayer = false;
+		portraitObjId.visible = hasActivePlayer;
+		carObjId.visible = hasActivePlayer;
 		
 		if (slot == 0){
 			image_index = 0;
@@ -31,10 +33,6 @@ if (!hasActivePlayer) {
 		}
 		
 		playerName = "";
-		
-		with(portraitObjId) {
-			//other.visible = false; // should only be visible if this panel has an active player
-		}
 	}
 	
 	var refreshKeyboard = keyboard_check_pressed(ord("R")) && slot == 0;
@@ -43,5 +41,6 @@ if (!hasActivePlayer) {
 		// refresh the name and portrait
 		playerName = sc_random_character_name();
 		// TODO: get random portrait index
+		// TODO: pick car color
 	}
 }
