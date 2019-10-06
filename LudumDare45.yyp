@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "1b71864e-7545-4234-996c-a326b0b99b4f",
+            "Value": {
+                "id": "9f088ca8-5726-492c-9c26-2fc8a67be1f5",
+                "resourcePath": "scripts\/sc_genPerlinNoise2D\/sc_genPerlinNoise2D.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1d1dc86a-25db-4097-9515-dcfc74522334",
             "Value": {
                 "id": "417e6a1e-01ad-438f-b6d2-4e0085eae83b",
@@ -247,6 +255,14 @@
             }
         },
         {
+            "Key": "45f08e63-edc5-4599-8be9-60b794e84e53",
+            "Value": {
+                "id": "fd1cc6bc-7d6b-4eb0-9e8f-6bb018115c90",
+                "resourcePath": "views\/45f08e63-edc5-4599-8be9-60b794e84e53.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4677f665-8fa1-4dff-a70b-4099bf507d39",
             "Value": {
                 "id": "bd98c0ba-61dc-4366-ae3b-bfd322fb8bf4",
@@ -284,6 +300,14 @@
                 "id": "5171dd41-b019-424a-a91b-d5439c150230",
                 "resourcePath": "views\/4ce89da7-f46c-4a50-aa6a-b3626a345865.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4edfeb7c-d679-4c38-9ef7-66d0617ea552",
+            "Value": {
+                "id": "e8431fd1-42fd-4721-bde0-01fbd51fddf0",
+                "resourcePath": "scripts\/sc_genPerlinNoise1D\/sc_genPerlinNoise1D.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -339,6 +363,14 @@
             "Value": {
                 "id": "7f10d3e6-afb8-4e5f-88ea-b6944dbf1d9f",
                 "resourcePath": "views\/58a3681c-e5d6-4d7d-9901-9ca5d89fe183.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5a2030f7-f769-41f1-bba2-37a06f161eb7",
+            "Value": {
+                "id": "5d700fc2-03cb-43d2-ac03-2450fb4ae116",
+                "resourcePath": "views\/5a2030f7-f769-41f1-bba2-37a06f161eb7.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -679,6 +711,14 @@
             }
         },
         {
+            "Key": "f0af80f9-119e-49c1-906d-7e30241a099a",
+            "Value": {
+                "id": "e0ed2545-8d0c-456f-80bc-50ba61499fdc",
+                "resourcePath": "objects\/o_tileGenerator\/o_tileGenerator.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f1e07984-ee14-4ef2-8b90-b7d693c95b1f",
             "Value": {
                 "id": "97052f42-e891-4fa9-8e1a-bf5bde047840",
@@ -741,7 +781,9 @@
         "efc0ba23-7631-4c31-9cdf-aea61656365f",
         "4b398691-e202-43ed-aa0b-c729363de093",
         "45afa23e-a732-4e73-928f-064f2e2ebf06",
-        "3f911571-4ca3-4de1-a9e2-dbf4e9e12313"
+        "3f911571-4ca3-4de1-a9e2-dbf4e9e12313",
+        "1b71864e-7545-4234-996c-a326b0b99b4f",
+        "4edfeb7c-d679-4c38-9ef7-66d0617ea552"
     ],
     "tutorial": ""
 }
