@@ -1,3 +1,8 @@
+var turnLeft = false
+var turnRight = false
+var accelerate = false
+var decelerate = false
+
 if (isPlayer) {
 	turnLeft = keyboard_check(vk_left);
 	turnRight = keyboard_check(vk_right);
@@ -5,63 +10,31 @@ if (isPlayer) {
 	decelerate = keyboard_check(vk_down);
 } else {
 	// AI
-	turnLeft = false;
-	turnRight = false;
-	accelerate = false;
-	decelerate = false;
+	var pathPointX = path_get_point_x(path, pointIdx);
+	var pathPointY = path_get_point_y(path, pointIdx);
+	
+	var steerDir = point_direction(x, y, pathPointX, pathPointY);
+	var steerRot = angle_difference(-phy_rotation, steerDir);
+		
+	// Steer car
+	if steerRot < 0 {
+		turnLeft = true;
+	} else if steerRot > 0 {
+		turnRight = true;
+	}
+	// Otherwise, drive straight!
 
-	if(!done) {
-		var pathPointX = path_get_point_x(path, pointIdx);
-		var pathPointY = path_get_point_y(path, pointIdx);
+	// For now, always accelerate
+	accelerate = keyboard_check(vk_up);
 		
-		debugTargetPointX = pathPointX;
-		debugTargetPointY = pathPointY;
+	debugTargetPointX = pathPointX;
+	debugTargetPointY = pathPointY;
 
-		// Reynolds seek steering
-		// http://www.red3d.com/cwr/steer/gdc99/
-		var desiredVelX = x - pathPointX;
-		var desiredVelY = y - pathPointY;
-
-		// Normalize
-		var len = sqrt((desiredVelX * desiredVelX) + (desiredVelY * desiredVelY));
-		desiredVelX /= len;
-		desiredVelY /= len;
-		// TODO May need to add max speed to this
-		
-		// Flip physics values to screen values
-		var curVelX = -phy_linear_velocity_x;
-		var curVelY = -phy_linear_velocity_y;
-		// Normalize
-		var len = sqrt((curVelX * curVelX) + (curVelY * curVelY));
-		curVelX /= len;
-		curVelY /= len;
-		
-		var seekVelX = desiredVelX - curVelX;
-		var seekVelY = desiredVelY - curVelY;
-		
-		debugStr = string(seekVelX) + ", " + string(seekVelY);
-		
-		// Steer car
-		// TODO Figure out quad1 & 3
-		var quad1 = seekVelX < 0 && seekVelY < 0;
-		var quad2 = seekVelX > 0 && seekVelY < 0;
-		var quad3 = seekVelX > 0 && seekVelY > 0;
-		var quad4 = seekVelX < 0 && seekVelY > 0;
-		if quad2 {
-			turnRight = true;
-		} else if quad4 {
-			turnLeft = true;
-		}
-		// Otherwise, drive straight!
-		// For now, always accelerate
-		accelerate = true
-
-		var nearPathPoint = point_distance(x, y, pathPointX, pathPointY) < pointDistance; /* Change this if necessary */
-		if(nearPathPoint) {
-	        pointIdx++;
-	        if(pointIdx >= numPoints) {
-	            done = true;
-	       }
+	var nearPathPoint = point_distance(x, y, pathPointX, pathPointY) < pointDistance; /* Change this if necessary */
+	if(nearPathPoint) {
+	    pointIdx++;
+	    if(pointIdx >= numPoints) {
+	        pointIdx = 0;
 	    }
 	}
 }
@@ -79,32 +52,50 @@ if turnLeft {
 }
 phy_angular_velocity = turnDir;
 
-// Move
-if accelerate {	
-	var xAccel = dcos(rotation) * accelerationSpeed;
-	var yAccel = dsin(rotation) * accelerationSpeed;
-	physics_apply_force(x, y, xAccel, yAccel)
-	
-	debugAccelX = xAccel;
-	debugAccelY = yAccel;
-	
-	// Make skids
-	if abs(phy_speed_x) > minSkidSpeed || abs(phy_speed_y) > minSkidSpeed {
-		var arrLen = array_height_2d(wheelArray);
-		for (var i = 0; i < arrLen; i++) {
-			var xDir = wheelArray[i, 0];
-			var yDir = wheelArray[i, 1];
+// Gotta go fast
+var forceX = 0;
+var forceY = 0;
+var xRot = dcos(rotation);
+var yRot = dsin(rotation);
+var xAccel = xRot * accelerationSpeed;
+var yAccel = yRot * accelerationSpeed;
+
+if accelerate && !decelerate {
+	forceX = xAccel;
+	forceY = yAccel;
+} else if decelerate {
+	// Normalize
+	var len = sqrt((phy_speed_x * phy_speed_x) + (phy_speed_y * phy_speed_y));
+	var decelX = -phy_speed_x / len;
+	var decelY = -phy_speed_y / len;
+
+	forceX = decelX * accelerationSpeed;
+	forceY = decelY * accelerationSpeed;
+}
+
+if forceX != 0 || forceY != 0 {
+	physics_apply_force(x, y, forceX, forceY);	
+}
+
+debugForceX = forceX;
+debugForceY = forceY;
+
+// Make skids
+if abs(phy_speed_x) > minSkidSpeed || abs(phy_speed_y) > minSkidSpeed {
+	var arrLen = array_height_2d(wheelArray);
+	for (var i = 0; i < arrLen; i++) {
+		var xDir = wheelArray[i, 0];
+		var yDir = wheelArray[i, 1];
 			
-			var skidStartX = x + (dcos(rotation) * xDir * 5);
-			var skidStartY = y + (dsin(rotation) * yDir * 5);
+		var skidStartX = x + (xRot * xDir * 5);
+		var skidStartY = y + (yRot * yDir * 5);
 		
-			var truckDepth = depth;
-			with(instance_create(skidStartX, skidStartY, obj_skid_mark_v2)) {
-				depth = truckDepth + 1;
-				skidEndX = skidStartX + xAccel
-				skidEndY = skidStartY + yAccel
-			}	
-		}
+		var truckDepth = depth;
+		with(instance_create(skidStartX, skidStartY, obj_skid_mark_v2)) {
+			depth = truckDepth + 1;
+			skidEndX = skidStartX + xAccel
+			skidEndY = skidStartY + yAccel
+		}	
 	}
 }
 
@@ -114,7 +105,7 @@ if modRotation < 0 {
 	modRotation	+= 360;
 }
 
-debugStr = string(modRotation) + " | " + string(rotation);
+// debugStr = string(modRotation) + " | " + string(rotation);
 
 // HACKS Likely a better way to do this, but I am le tired
 if modRotation > 22.5 * 1 && modRotation < 22.5 * 3 {
