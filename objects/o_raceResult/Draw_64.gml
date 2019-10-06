@@ -5,4 +5,6 @@ if (hasInit && hasBuilt) {
 	draw_set_halign(fa_left)
 	draw_set_color(c_ltgray)
 	draw_text(x + nameOffsetX, y + nameOffsetY, racerName);
+	
+	draw_sprite(sp_portraits_sm, portraitIndex, x + portraitOffsetX, y + portraitOffsetY);
 }

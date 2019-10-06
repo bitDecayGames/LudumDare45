@@ -19,31 +19,20 @@ if (keyboardContinue || gamepadContinue) {
 	}
 }
 
+var vAxis = gamepad_axis_value(slot, gp_axislv);
+var up = (slot == 0 && keyboard_check_pressed(vk_up)) || gamepad_button_check_pressed(slot, gp_padu) || (!gamepadStickReset && vAxis > threshold);
+var down = (slot == 0 && keyboard_check_pressed(vk_down)) || gamepad_button_check_pressed(slot, gp_padd) || (!gamepadStickReset && vAxis < -threshold);
 
-
-global.store_current_selection_index += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up)
-
-
-if (gamepad_button_check_pressed(0, gp_padu)) {
+if (up) {
 	global.store_current_selection_index -= 1;
-} else if (gamepad_button_check_pressed(0, gp_padd)) {
+	gamepadStickReset = true;
+} else if (down) {
 	global.store_current_selection_index += 1;	
+	gamepadStickReset = true;
 }
 
-
-var vAxis = gamepad_axis_value(0, gp_axislv);
-if (!gamepadStickReset) {
-	if (vAxis > threshold) {
-		global.store_current_selection_index += 1;
-		gamepadStickReset = true;
-	} else if (vAxis < -threshold) {
-		global.store_current_selection_index -= 1;
-		gamepadStickReset = true;
-	}
-} else {
-	if (vAxis < threshold && vAxis > -threshold) {
-		gamepadStickReset = false;
-	}
+if (vAxis < threshold && vAxis > -threshold) {
+	gamepadStickReset = false;
 }
 
 

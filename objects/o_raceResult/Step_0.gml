@@ -13,15 +13,12 @@ if (hasInit){
 		portraitObjId = instance_create_depth(x + portraitOffsetX, y + portraitOffsetY, -100, o_characterSelectPortrait)
 
 		// set the portrait.image_index to the correct player portrait
-		portraitObjId.image_index = global.player_portrait[slot];
+		portraitIndex = global.player_portrait[slot];
 		
 		hasBuilt = true;
 		
 		racerName = global.player_name[slot];
 	} else {
-		portraitObjId.x = x + portraitOffsetX;
-		portraitObjId.y = y + portraitOffsetY;
-		
 		if (x > targetX) x -= flyInSpeed;
 	}
 }
