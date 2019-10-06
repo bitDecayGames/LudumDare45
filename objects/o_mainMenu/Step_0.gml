@@ -42,5 +42,8 @@ if (keyboard_check_pressed(vk_enter) > 0 || gamepad_button_check_pressed(0, gp_f
 		case 2:
 			room_goto(rm_RaceResults)
 			break;
+		case 3:
+			room_goto(rm_Shop)
+			break;
 	}
 }
