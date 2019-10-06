@@ -49,3 +49,8 @@ if (!gamepadStickReset) {
 
 if (global.store_current_selection_index >= menuCount) global.store_current_selection_index = 0
 else if (global.store_current_selection_index < 0) global.store_current_selection_index = menuCount - 1
+
+
+if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_select)) {
+	room_goto(rm_MainMenu);	
+}

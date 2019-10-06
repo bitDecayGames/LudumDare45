@@ -4,8 +4,8 @@
 nameOffsetX = 210;
 nameOffsetY = 70;
 
-portraitOffsetX = 150;
-portraitOffsetY = -100;
+portraitOffsetX = 0//150;
+portraitOffsetY = 0//-100;
 
 carOffsetX = 110;
 carOffsetY = 20;
