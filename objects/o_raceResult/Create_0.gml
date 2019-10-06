@@ -3,6 +3,8 @@
 portraitOffsetX = 120;
 portraitOffsetY = 0;
 
+portraitIndex = 0;
+
 nameOffsetX = 270;
 nameOffsetY = 30;
 

@@ -17,7 +17,7 @@ if (!hasActivePlayer) {
 		playerName = sc_random_character_name();
 		
 		var portraitIndex = sc_pick_random_portrait();
-		portraitObjId.image_index = portraitIndex;
+		portraitObjId.image_index = portraitIndex * 3 + 2;
 		
 		var rndColor = sc_pick_random_car_color();
 		carObjId.color1_r = rndColor[0];
@@ -66,7 +66,7 @@ if (!hasActivePlayer) {
 	}
 	
 	var refreshKeyboard = keyboard_check_pressed(ord("R")) && slot == 0;
-	var refreshGamepad = gamepad_button_check_pressed(slot, gp_face3);
+	var refreshGamepad = gamepad_button_check_pressed(slot, gp_face4);
 	if (refreshKeyboard || refreshGamepad) {
 		// refresh the name and portrait
 		playerName = sc_random_character_name();

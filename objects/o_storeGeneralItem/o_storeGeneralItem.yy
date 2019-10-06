@@ -24,20 +24,6 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "9d18e31c-33d4-4299-81ef-aeae6560129c",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "cost",
-            "varType": 0
-        },
-        {
             "id": "276bb299-5fc5-4f99-a48c-28c28275daec",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -64,6 +50,34 @@
             "value": "0",
             "varName": "menuIndex",
             "varType": 1
+        },
+        {
+            "id": "2c6c06e1-ffb8-415f-acbe-7860d5668689",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "baseCost",
+            "varType": 0
+        },
+        {
+            "id": "ba8fc2a6-5ebc-4ff5-a845-81a417146e6c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "100",
+            "varName": "ratePerLevel",
+            "varType": 0
         }
     ],
     "solid": false,
