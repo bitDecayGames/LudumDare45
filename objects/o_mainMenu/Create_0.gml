@@ -7,7 +7,7 @@ buttonHeight = 32
 
 button[0] = "Join Tournament"
 button[1] = "Quit"
-button[2] = "Do nothing"
+button[2] = "Test Race Results"
 
 menuCount = array_length_1d(button)
 
