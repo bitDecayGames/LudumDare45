@@ -9,3 +9,5 @@ nameOffsetY = 30;
 hasBuilt = false;
 
 flyInSpeed = 10;
+
+racerName = "";

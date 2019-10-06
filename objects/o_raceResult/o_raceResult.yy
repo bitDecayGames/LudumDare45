@@ -63,35 +63,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "place",
-            "varType": 1
-        },
-        {
-            "id": "157f71ac-fb3c-44e0-a99b-1ef661340924",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "Mack The Default",
-            "varName": "racerName",
-            "varType": 2
-        },
-        {
-            "id": "f9038b25-215e-4a21-90ef-0e8f8b4fa419",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "portraitIndex",
+            "varName": "slot",
             "varType": 1
         },
         {

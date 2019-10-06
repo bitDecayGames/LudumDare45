@@ -13,7 +13,6 @@
 /.settings
 /bin
 /temp/*
-/scripts/
 /temp.txt
 /build.xml
 /manifest.mf

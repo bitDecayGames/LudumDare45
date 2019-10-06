@@ -1,5 +1,7 @@
 /// @description slide in and keep child objects linked
 
+var place = global.player_place[slot];
+
 if (hasInit){
 	if (!hasBuilt) {
 		if (place <= 2) {
@@ -10,10 +12,12 @@ if (hasInit){
 
 		portraitObjId = instance_create_depth(x + portraitOffsetX, y + portraitOffsetY, -100, o_characterSelectPortrait)
 
-		// TODO: set the portrait.image_index to the correct player portrait
-		portraitObjId.image_index = portraitIndex;
+		// set the portrait.image_index to the correct player portrait
+		portraitObjId.image_index = global.player_portrait[slot];
 		
 		hasBuilt = true;
+		
+		racerName = global.player_name[slot];
 	} else {
 		portraitObjId.x = x + portraitOffsetX;
 		portraitObjId.y = y + portraitOffsetY;
