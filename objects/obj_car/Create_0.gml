@@ -1,7 +1,7 @@
 debug = true
 
 friction_strength = 6
-acceleration_speed = 0.01
+acceleration_speed = 0.05
 center_to_front = 40
 
 richting = 0
@@ -17,7 +17,7 @@ path = path_carProto;
 // mp_grid_path(path); // assumed path points to the goal
 numPoints = path_get_number(path); // get the number of nodes of that path
 pointIdx = 0;// path to the first node first... firstly.
-pointDistance = 64; // Distance from a node required before targeting the next one
+pointDistance = 200; // Distance from a node required before targeting the next one
 done = 0;
 
 // Use here to swap between AI and player control
