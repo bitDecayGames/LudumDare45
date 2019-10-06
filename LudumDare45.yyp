@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "062dba3e-67c0-4d44-8fc3-e7c0a26d305c",
+            "Value": {
+                "id": "b583d4dc-7063-4231-9575-a44de39729a9",
+                "resourcePath": "sprites\\sp_truck\\sp_truck.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "06ef4b29-4373-4689-a235-c0458596c0d3",
             "Value": {
                 "id": "92f24cf1-192e-4f52-aa6a-857c301edfd6",
@@ -140,6 +148,14 @@
                 "id": "81238376-66a9-4539-b616-cb62c1faa880",
                 "resourcePath": "rooms\/rm_RaceResults\/rm_RaceResults.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "2912c8d8-d1af-4459-a81c-e4462ab7c6a0",
+            "Value": {
+                "id": "379afd13-b363-418a-869f-a5951155ae9f",
+                "resourcePath": "objects\\obj_truck\\obj_truck.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -303,19 +319,19 @@
             }
         },
         {
+            "Key": "6b108fc2-0f8a-4612-9802-071f9790bd28",
+            "Value": {
+                "id": "50b9d1d9-841c-46dc-ba9b-c0bbffeeecd9",
+                "resourcePath": "objects\\obj_skid_mark_v2\\obj_skid_mark_v2.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "71ea89b5-a2f2-4161-ba4c-b4fd164e81b1",
             "Value": {
                 "id": "3507d7d3-54e1-4443-9e97-52f6d6dc2245",
                 "resourcePath": "views\\71ea89b5-a2f2-4161-ba4c-b4fd164e81b1.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "72651d87-d89e-4253-89ee-b87c4729bffb",
-            "Value": {
-                "id": "e0cda816-75f5-474e-baf5-794722087e12",
-                "resourcePath": "objects\\o_roomMove\\o_roomMove.yy",
-                "resourceType": "GMObject"
             }
         },
         {
