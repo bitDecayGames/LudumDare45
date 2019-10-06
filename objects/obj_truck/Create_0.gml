@@ -33,3 +33,14 @@ done = 0;
 // Use here to swap between AI and player control
 isPlayer = true
 
+wheelArray[0, 0] = 1;
+wheelArray[0, 1] = 1;
+
+wheelArray[1, 0] = -1;
+wheelArray[1, 1] = -1;
+
+wheelArray[2, 0] = -1;
+wheelArray[2, 1] = 1;
+
+wheelArray[3, 0] = 1;
+wheelArray[3, 1] = -1;
