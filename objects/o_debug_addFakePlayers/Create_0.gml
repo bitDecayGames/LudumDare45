@@ -16,7 +16,9 @@ for (var i = 0; i < playerCount; ++i) {
 		10.0, 
 		sc_pick_random_car_color(), 
 		sc_pick_random_portrait(), 
-		false
+		i < 1
 	);
 	global.player_place[i] = (playerCount - 1) - i;
 }
+
+global.store_current_slot = 0;

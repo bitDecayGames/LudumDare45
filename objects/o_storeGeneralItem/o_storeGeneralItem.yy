@@ -1,29 +1,10 @@
 {
-    "id": "c29258e4-0b3d-42ff-aeb8-9930090abb4c",
+    "id": "3578ba0e-429c-464f-a700-9ed00a17c7ca",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_storeCtrl",
+    "name": "o_storeGeneralItem",
     "eventList": [
-        {
-            "id": "4e64b3bc-cb20-4c8d-8f1a-63bf9f868b02",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "c29258e4-0b3d-42ff-aeb8-9930090abb4c"
-        },
-        {
-            "id": "f65b5ac5-dd35-46c5-85c6-a69f696e5a87",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "c29258e4-0b3d-42ff-aeb8-9930090abb4c"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -43,7 +24,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "54b7b823-9368-4b6a-865a-0b7720ac6405",
+            "id": "9d18e31c-33d4-4299-81ef-aeae6560129c",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -53,7 +34,35 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "menuCount",
+            "varName": "cost",
+            "varType": 0
+        },
+        {
+            "id": "276bb299-5fc5-4f99-a48c-28c28275daec",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "available",
+            "varType": 3
+        },
+        {
+            "id": "b502f541-ebaa-4dd0-8d38-25221b0ad927",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "menuIndex",
             "varType": 1
         }
     ],

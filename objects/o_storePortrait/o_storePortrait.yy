@@ -1,28 +1,28 @@
 {
-    "id": "c29258e4-0b3d-42ff-aeb8-9930090abb4c",
+    "id": "29048fc2-1c7e-4e67-bc46-5fb838038c4d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_storeCtrl",
+    "name": "o_storePortrait",
     "eventList": [
         {
-            "id": "4e64b3bc-cb20-4c8d-8f1a-63bf9f868b02",
+            "id": "e79c20ed-6437-40d6-a8ef-808a4eb3d84c",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "c29258e4-0b3d-42ff-aeb8-9930090abb4c"
+            "m_owner": "29048fc2-1c7e-4e67-bc46-5fb838038c4d"
         },
         {
-            "id": "f65b5ac5-dd35-46c5-85c6-a69f696e5a87",
+            "id": "09d618b2-6459-4ff7-b295-aa83d81b89b8",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "c29258e4-0b3d-42ff-aeb8-9930090abb4c"
+            "enumb": 64,
+            "eventtype": 8,
+            "m_owner": "29048fc2-1c7e-4e67-bc46-5fb838038c4d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -41,23 +41,8 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        {
-            "id": "54b7b823-9368-4b6a-865a-0b7720ac6405",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0",
-            "varName": "menuCount",
-            "varType": 1
-        }
-    ],
+    "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "dae4faa7-7209-403c-a973-1d9561f492dd",
     "visible": true
 }
