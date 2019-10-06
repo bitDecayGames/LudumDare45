@@ -15,7 +15,10 @@ if (!hasActivePlayer) {
 		}
 		
 		playerName = sc_random_character_name();
-		// TODO: get random portrait index
+		
+		var portraitIndex = sc_pick_random_portrait();
+		portraitObjId.image_index = portraitIndex;
+		
 		var rndColor = sc_pick_random_car_color();
 		carObjId.color1_r = rndColor[0];
 		carObjId.color1_g = rndColor[1];
@@ -27,7 +30,21 @@ if (!hasActivePlayer) {
 		carObjId.color3_g = rndColor[7];
 		carObjId.color3_b = rndColor[8];
 		
-		sc_save_player_stats(slot, hasActivePlayer, playerName, 0.0, 0.0, 0.0, 0.0, 0.0, 100.0, 10.0, rndColor);
+		sc_save_player_stats(
+			slot, 
+			hasActivePlayer, 
+			playerName, 
+			0.0, 
+			0.0, 
+			0.0, 
+			0.0, 
+			0.0, 
+			100.0, 
+			10.0, 
+			rndColor, 
+			portraitIndex,
+			true
+		);
 	}
 } else {
 	var exitKeyboard = keyboard_check_pressed(ord("B")) && slot == 0;
@@ -53,7 +70,12 @@ if (!hasActivePlayer) {
 	if (refreshKeyboard || refreshGamepad) {
 		// refresh the name and portrait
 		playerName = sc_random_character_name();
-		// TODO: get random portrait index
+		
+		// get random portrait index
+		var portraitIndex = sc_pick_random_portrait();
+		portraitObjId.image_index = portraitIndex;
+		global.player_portrait = portraitIndex;
+		
 		var rndColor = sc_pick_random_car_color();
 		carObjId.color1_r = rndColor[0];
 		carObjId.color1_g = rndColor[1];

@@ -175,6 +175,14 @@
             }
         },
         {
+            "Key": "3f911571-4ca3-4de1-a9e2-dbf4e9e12313",
+            "Value": {
+                "id": "b103700a-3867-483c-a706-8e9c7bff9940",
+                "resourcePath": "scripts\/sc_pick_random_portrait\/sc_pick_random_portrait.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "40474aff-eefc-4c75-9db4-7e781415eff4",
             "Value": {
                 "id": "438c28e3-dd9d-4aca-bb7f-5028f2fbd1d6",
@@ -511,6 +519,14 @@
             }
         },
         {
+            "Key": "dae4faa7-7209-403c-a973-1d9561f492dd",
+            "Value": {
+                "id": "4818e9e6-d021-4e66-8d96-8412fc8074e4",
+                "resourcePath": "sprites\/sp_portraits\/sp_portraits.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "debb5751-2735-490a-a025-04e842d0c132",
             "Value": {
                 "id": "0e8f5895-737a-4788-9d8d-2bd1fee513b9",
@@ -559,6 +575,14 @@
             }
         },
         {
+            "Key": "f4a340d8-7471-43da-a68b-fd5e006b794f",
+            "Value": {
+                "id": "0c942e29-0b1a-4126-889a-33540517e778",
+                "resourcePath": "objects\/o_debug_addFakePlayers\/o_debug_addFakePlayers.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "f7ef51b6-118c-4749-8f3c-c82ae0c8afec",
             "Value": {
                 "id": "18325156-2c21-4c6c-90ab-6e4ac2ebd3b5",
@@ -596,7 +620,8 @@
         "502cb42c-e640-4e5d-978a-2765dec220e4",
         "efc0ba23-7631-4c31-9cdf-aea61656365f",
         "4b398691-e202-43ed-aa0b-c729363de093",
-        "45afa23e-a732-4e73-928f-064f2e2ebf06"
+        "45afa23e-a732-4e73-928f-064f2e2ebf06",
+        "3f911571-4ca3-4de1-a9e2-dbf4e9e12313"
     ],
     "tutorial": ""
 }

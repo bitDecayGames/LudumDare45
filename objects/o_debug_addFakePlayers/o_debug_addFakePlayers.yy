@@ -1,18 +1,18 @@
 {
-    "id": "4677f665-8fa1-4dff-a70b-4099bf507d39",
+    "id": "f4a340d8-7471-43da-a68b-fd5e006b794f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_raceResultsCtrl",
+    "name": "o_debug_addFakePlayers",
     "eventList": [
         {
-            "id": "d6b518f3-9952-4a36-a807-dd9c3990350c",
+            "id": "bf31043a-ffe5-4a22-9ed9-5a6e9d72f5b5",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "4677f665-8fa1-4dff-a70b-4099bf507d39"
+            "m_owner": "f4a340d8-7471-43da-a68b-fd5e006b794f"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -31,10 +31,8 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        
-    ],
+    "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "8c06bc79-2c95-4431-ae1e-d0349169d2af",
     "visible": true
 }
