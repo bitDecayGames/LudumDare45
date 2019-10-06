@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "32e242f3-df4a-43b5-a220-3bd5035829fa",
+            "Value": {
+                "id": "39569b60-2e09-44a3-b741-139bfb9589a8",
+                "resourcePath": "shaders\/shd_colorMask\/shd_colorMask.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "39c9ffdb-a05d-42e6-a611-ab866b5544a4",
             "Value": {
                 "id": "bcd39050-b6f7-4ec6-aa10-6a65530b37bd",

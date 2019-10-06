@@ -4,7 +4,26 @@
     "mvc": "1.0",
     "name": "o_characterSelectCar",
     "eventList": [
-        
+        {
+            "id": "0e7a6b1c-9dcf-4a97-8f1a-0016d3f90dde",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "01663172-58e3-47a0-a473-6ee06a95a283"
+        },
+        {
+            "id": "40451562-1304-4289-91d1-4fc682ed5e00",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "01663172-58e3-47a0-a473-6ee06a95a283"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
