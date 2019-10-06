@@ -1,26 +1,26 @@
 if (isPlayer) {
-	turnLeft = keyboard_check(vk_left)
-	turnRight = keyboard_check(vk_right)
-	accelerate = keyboard_check(vk_up)
-	decelerate = keyboard_check(vk_down)
+	turnLeft = keyboard_check(vk_left);
+	turnRight = keyboard_check(vk_right);
+	accelerate = keyboard_check(vk_up);
+	decelerate = keyboard_check(vk_down);
 } else {
 	// AI
-	turnLeft = false
-	turnRight = false
-	accelerate = false
-	decelerate = false
-	
+	turnLeft = false;
+	turnRight = false;
+	accelerate = false;
+	decelerate = false;
+
 	if(!done) {
-		var pathPointX = path_get_point_x(path, pointIdx)
-		var pathPointY = path_get_point_y(path, pointIdx)
+		var pathPointX = path_get_point_x(path, pointIdx);
+		var pathPointY = path_get_point_y(path, pointIdx);
 		
 		debugTargetPointX = pathPointX;
 		debugTargetPointY = pathPointY;
 
 		// Reynolds seek steering
 		// http://www.red3d.com/cwr/steer/gdc99/
-		var desiredVelX = x - pathPointX
-		var desiredVelY = y - pathPointY
+		var desiredVelX = x - pathPointX;
+		var desiredVelY = y - pathPointY;
 
 		// Normalize
 		var len = sqrt((desiredVelX * desiredVelX) + (desiredVelY * desiredVelY));
@@ -29,8 +29,8 @@ if (isPlayer) {
 		// TODO May need to add max speed to this
 		
 		// Flip physics values to screen values
-		var curVelX = -phy_linear_velocity_x
-		var curVelY = -phy_linear_velocity_y
+		var curVelX = -phy_linear_velocity_x;
+		var curVelY = -phy_linear_velocity_y;
 		// Normalize
 		var len = sqrt((curVelX * curVelX) + (curVelY * curVelY));
 		curVelX /= len;
@@ -80,7 +80,7 @@ if turnLeft {
 phy_angular_velocity = turnDir;
 
 // Move
-if accelerate {
+if accelerate {	
 	var xAccel = dcos(rotation) * accelerationSpeed;
 	var yAccel = dsin(rotation) * accelerationSpeed;
 	physics_apply_force(x, y, xAccel, yAccel)
@@ -89,10 +89,21 @@ if accelerate {
 	debugAccelY = yAccel;
 	
 	// Make skids
-	if phy_speed_x > minSkidSpeed || phy_speed_y > minSkidSpeed {
-		with(instance_create(x, y, obj_skid_mark_v2)) {
-			skidEndX = x + xAccel
-			skidEndY = y + yAccel
+	if abs(phy_speed_x) > minSkidSpeed || abs(phy_speed_y) > minSkidSpeed {
+		var arrLen = array_height_2d(wheelArray);
+		for (var i = 0; i < arrLen; i++) {
+			var xDir = wheelArray[i, 0];
+			var yDir = wheelArray[i, 1];
+			
+			var skidStartX = x + (dcos(rotation) * xDir * 5);
+			var skidStartY = y + (dsin(rotation) * yDir * 5);
+		
+			var truckDepth = depth;
+			with(instance_create(skidStartX, skidStartY, obj_skid_mark_v2)) {
+				depth = truckDepth + 1;
+				skidEndX = skidStartX + xAccel
+				skidEndY = skidStartY + yAccel
+			}	
 		}
 	}
 }
