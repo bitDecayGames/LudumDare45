@@ -479,14 +479,6 @@
             }
         },
         {
-            "Key": "d8eb9539-f29b-44b4-b861-b45cefc469e7",
-            "Value": {
-                "id": "b056eb6c-1c17-4067-8112-a5fa19a3dba9",
-                "resourcePath": "scripts\/sc_micros\/sc_micros.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "debb5751-2735-490a-a025-04e842d0c132",
             "Value": {
                 "id": "0e8f5895-737a-4788-9d8d-2bd1fee513b9",
@@ -553,7 +545,6 @@
     ],
     "script_order": [
         "62dc2772-d8b3-416c-ae04-89249e571876",
-        "d8eb9539-f29b-44b4-b861-b45cefc469e7",
         "528cf48a-6ecd-4e85-970a-d7d9a4fe705a",
         "8904056f-d70f-4db5-b64d-58fc0fa93f05",
         "06ef4b29-4373-4689-a235-c0458596c0d3",
