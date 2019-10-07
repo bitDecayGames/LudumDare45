@@ -1,7 +1,7 @@
 /// @description Wait till after the room has been created so we have a trackPath, then instantiate cars
 var path = global.trackPath;
-var startX = path_get_point_x(path, 0)
-var startY = path_get_point_y(path, 0)
+var startX = path_get_point_x(path, 0);
+var startY = path_get_point_y(path, 0);
 
 show_debug_message("Starting players at: " + string(startX) + ", " + string(startY));
 for (var i = 0; i < playerCount; ++i){

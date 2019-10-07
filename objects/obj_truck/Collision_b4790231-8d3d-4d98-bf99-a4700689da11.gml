@@ -3,6 +3,11 @@ if alarm[0] < 0 {
 
 	var mag = point_distance(other.x, other.y, other.x + other.phy_speed_x, other.y + other.phy_speed_y);
 	var dmg = damagePotential * mag;
+	
+	// Halve damage dealt if other player has armor
+	if global.player_armor[other.slot] > 0 {
+		dmg /= 2;	
+	}
 
 	other.hitpoints -= dmg;
 	
