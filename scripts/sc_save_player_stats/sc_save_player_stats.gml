@@ -39,3 +39,6 @@ global.player_colors[slot] = colors;
 global.player_portrait[slot] = portrait;
 global.player_place[slot] = 0;
 global.player_is_human[slot] = isHuman;
+
+global.player_oilslick[slot] = 0;
+global.player_turbo[slot] = 0;

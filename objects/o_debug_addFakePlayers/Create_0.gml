@@ -7,7 +7,7 @@ for (var i = 0; i < playerCount; ++i) {
 		i, 
 		true, 
 		sc_random_character_name(), 
-		10000.0, 
+		1000.0, 
 		0.1, 
 		0.1, 
 		0.1, 

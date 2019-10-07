@@ -10,7 +10,7 @@ if (isSelected && available && (keyboardSelect || gamepadSelect)) {
 	
 	var cost = sc_get_current_store_item_cost(baseCost, ratePerLevel, currentStatValue, maxStatValue);
 	var money = global.player_money[slot];
-	if (cost < money) {
+	if (cost <= money) {
 		money -= cost;
 		global.player_money[slot] = money;
 		

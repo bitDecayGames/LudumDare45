@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "3978b779-678d-4319-bdee-3a90ee73193c",
+            "Value": {
+                "id": "08a2c6ea-1119-40c9-be63-e841f77d4e44",
+                "resourcePath": "sprites\/sp_shopFrame\/sp_shopFrame.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "39c9ffdb-a05d-42e6-a611-ab866b5544a4",
             "Value": {
                 "id": "bcd39050-b6f7-4ec6-aa10-6a65530b37bd",
@@ -300,6 +308,14 @@
                 "id": "5171dd41-b019-424a-a91b-d5439c150230",
                 "resourcePath": "views\/4ce89da7-f46c-4a50-aa6a-b3626a345865.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4da957b2-2b5c-4088-a44f-bd08794d797f",
+            "Value": {
+                "id": "822e423f-eabe-4ed8-bf41-7688a87b1e5f",
+                "resourcePath": "objects\/o_storePowerUp_oil\/o_storePowerUp_oil.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -439,6 +455,14 @@
             }
         },
         {
+            "Key": "6f4991d7-2777-4b1b-aa67-95c2bafaea2b",
+            "Value": {
+                "id": "4b615e73-59df-4b49-b072-060ff8c6da8a",
+                "resourcePath": "objects\/o_storePowerUp_turbo\/o_storePowerUp_turbo.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "71ea89b5-a2f2-4161-ba4c-b4fd164e81b1",
             "Value": {
                 "id": "3507d7d3-54e1-4443-9e97-52f6d6dc2245",
@@ -503,11 +527,27 @@
             }
         },
         {
+            "Key": "7dc05225-31fd-4f26-a00a-b67e27203251",
+            "Value": {
+                "id": "5a425792-c074-40ba-9cbe-94de0ceed907",
+                "resourcePath": "sprites\/sp_shopOilSlick_icon\/sp_shopOilSlick_icon.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8904056f-d70f-4db5-b64d-58fc0fa93f05",
             "Value": {
                 "id": "46a9f3c8-cf5b-45f5-91d1-5efe73a927ed",
                 "resourcePath": "scripts\/action_if_variable\/action_if_variable.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "89673029-ee7c-4c4c-807a-2c723e33e062",
+            "Value": {
+                "id": "e051c7c4-d179-4f9d-9ca2-daf6a663c9d3",
+                "resourcePath": "sprites\/sp_shopOilSlick\/sp_shopOilSlick.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -594,7 +634,7 @@
             "Key": "aaf5dd3c-1f7b-4367-a275-fabb8c379b73",
             "Value": {
                 "id": "fe82d3fc-de0d-4115-ad8b-15fd2bbf72aa",
-                "resourcePath": "objects\/o_storeOilSlickPowerUp\/o_storeOilSlickPowerUp.yy",
+                "resourcePath": "objects\/o_storePowerUp\/o_storePowerUp.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -703,6 +743,14 @@
             }
         },
         {
+            "Key": "e26347aa-e22e-4ffa-a82c-fea64210fb27",
+            "Value": {
+                "id": "053f7947-26e2-4de5-9a35-60ddcf63c747",
+                "resourcePath": "views\/e26347aa-e22e-4ffa-a82c-fea64210fb27.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "e6fec314-7542-4ab8-99e2-d8f80719be56",
             "Value": {
                 "id": "1cd60d85-93bb-4219-b890-1821990135dc",
@@ -792,11 +840,23 @@
         }
     ],
     "script_order": [
+        "62dc2772-d8b3-416c-ae04-89249e571876",
+        "528cf48a-6ecd-4e85-970a-d7d9a4fe705a",
+        "8904056f-d70f-4db5-b64d-58fc0fa93f05",
         "06ef4b29-4373-4689-a235-c0458596c0d3",
+        "e6fec314-7542-4ab8-99e2-d8f80719be56",
+        "4bbc42ce-b2f7-4419-8f32-d501fac6b131",
+        "a652492b-d34d-4540-b7a9-7fa97cf738bd",
+        "1fd48176-cfff-4cfc-ba9d-34f77f4c4526",
         "1b71864e-7545-4234-996c-a326b0b99b4f",
+        "37b8c21f-bb2e-4d2f-86cf-b2e2584dc990",
         "1fd48176-cfff-4cfc-ba9d-34f77f4c4526",
         "3f911571-4ca3-4de1-a9e2-dbf4e9e12313",
         "45afa23e-a732-4e73-928f-064f2e2ebf06",
+        "4b398691-e202-43ed-aa0b-c729363de093",
+        "4bbc42ce-b2f7-4419-8f32-d501fac6b131",
+        "528cf48a-6ecd-4e85-970a-d7d9a4fe705a",
+        "502cb42c-e640-4e5d-978a-2765dec220e4",
         "4edfeb7c-d679-4c38-9ef7-66d0617ea552",
         "502cb42c-e640-4e5d-978a-2765dec220e4",
         "528cf48a-6ecd-4e85-970a-d7d9a4fe705a",
@@ -806,6 +866,7 @@
         "a652492b-d34d-4540-b7a9-7fa97cf738bd",
         "e6fec314-7542-4ab8-99e2-d8f80719be56",
         "efc0ba23-7631-4c31-9cdf-aea61656365f",
+        "fafd4c5c-8e74-4be0-8741-11ca09e46245",
         "fafd4c5c-8e74-4be0-8741-11ca09e46245",
         "4bbc42ce-b2f7-4419-8f32-d501fac6b131",
         "4b398691-e202-43ed-aa0b-c729363de093"
