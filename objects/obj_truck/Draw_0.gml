@@ -9,6 +9,19 @@ draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, 
 
 shader_reset();
 
+// Show health bar when hit.
+if (alarm[0] > 0) {
+	var barHeight = 5;
+	var barOffset = 15;
+	var barY = y - barOffset;
+	draw_set_color(c_red);
+	draw_line_width(x - barOffset, barY, x + barOffset, barY, barHeight);
+	
+	draw_set_color(c_green);
+	var hpPecent = hitpoints / maxHitpoints;
+	draw_line_width(x + barOffset - (barOffset * hpPecent * 2), barY, x + barOffset, barY, barHeight);
+}
+
 if (debug) {
 	draw_set_color(c_ltgray);
 	draw_text(x - 50, y + 50, debugStr);

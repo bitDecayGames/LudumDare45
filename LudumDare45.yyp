@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "3df329f1-d180-4038-b7c2-9b0468366c3b",
+            "Value": {
+                "id": "55296c9a-93ea-41a7-ae71-b30cce0ecf44",
+                "resourcePath": "objects\\obj_explosion\\obj_explosion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3f013f6f-2cb4-42b9-9d82-0dd6601589c0",
             "Value": {
                 "id": "0bafbb00-e5f8-4362-b729-ed9f2f6ac203",
@@ -556,6 +564,14 @@
                 "id": "5a425792-c074-40ba-9cbe-94de0ceed907",
                 "resourcePath": "sprites\/sp_shopOilSlick_icon\/sp_shopOilSlick_icon.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "86e5021d-a26f-4d77-863b-dcc17f6a1175",
+            "Value": {
+                "id": "36b8cd16-803f-49f8-8716-30c841fdd7f6",
+                "resourcePath": "objects\\obj_spark\\obj_spark.yy",
+                "resourceType": "GMObject"
             }
         },
         {

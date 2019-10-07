@@ -20,11 +20,12 @@ accelerationSpeed = 5 + 5 * global.player_acceleration[slot];
 turnSpeed = 50 + 50 * global.player_turning[slot];
 damagePotential = 1 + 1 * global.player_damage_potential[slot];
 hitpoints = 10 + 100 * global.player_hitpoints[slot];
-
-// Collisions/damage
-canBeHit = true;
+maxHitpoints = hitpoints;
 
 minSkidSpeed = 0.5
+
+// Can be hit
+alarm[0] = 0
 
 // AI stats
 // https://www.reddit.com/r/gamemaker/comments/4ieosj/can_i_use_game_maker_pathfinding_and_physics_at/d2xjaa7/
