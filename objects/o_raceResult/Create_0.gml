@@ -1,15 +1,21 @@
 /// @description Create and link portait
 
-portraitOffsetX = 120;
-portraitOffsetY = 0;
+// ///////////////////////
+// CONSTANTS
+portraitOffsetX = 100;
+portraitOffsetY = 10;
+portraitScale = 0.5;
 
-portraitIndex = 0;
-
-nameOffsetX = 270;
+nameOffsetX = 170;
 nameOffsetY = 30;
 
+flyInSpeed = 40;
+
+baseWinnings = 100.0;
+extraWiningsPerRank = 25.0;
+// ///////////////////////
+
+portraitIndex = 0;
 hasBuilt = false;
-
-flyInSpeed = 10;
-
 racerName = "";
+winnings = 0.0;

@@ -4,17 +4,19 @@ var place = global.player_place[slot];
 
 if (hasInit){
 	if (!hasBuilt) {
+		// set the portrait.image_index to the correct player portrait
+		portraitIndex = global.player_portrait[slot] * 3; // happy face
+		
 		if (place <= 2) {
 			image_index = place;	
 		} else {
 			image_index = 3;		
+			portraitIndex += 1; // set to sad face
 		}
-
-		portraitObjId = instance_create_depth(x + portraitOffsetX, y + portraitOffsetY, -100, o_characterSelectPortrait)
-
-		// set the portrait.image_index to the correct player portrait
-		portraitIndex = global.player_portrait[slot];
 		
+		winnings = baseWinnings + extraWiningsPerRank * (10 - place)
+		global.player_money[slot] += winnings;
+
 		hasBuilt = true;
 		
 		racerName = global.player_name[slot];
