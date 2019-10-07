@@ -687,14 +687,6 @@
             }
         },
         {
-            "Key": "cef0b533-436f-4961-b0b6-88ac3306623f",
-            "Value": {
-                "id": "0d4048bd-2d03-4a31-8525-e56c01e76106",
-                "resourcePath": "rooms\/rm_CarProto\/rm_CarProto.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "cfc95762-bcb8-4a6f-a742-d52edb4b0f7e",
             "Value": {
                 "id": "b6f8ca2a-44aa-4498-a539-96a411064d60",
