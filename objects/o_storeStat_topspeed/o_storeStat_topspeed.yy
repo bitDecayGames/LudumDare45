@@ -33,7 +33,7 @@
             "mvc": "1.0",
             "objectId": "cfc95762-bcb8-4a6f-a742-d52edb4b0f7e",
             "propertyId": "b5141c91-eced-43d9-a359-1e9fa46ba94e",
-            "value": "Top Speed"
+            "value": "Turning Speed"
         },
         {
             "id": "9e7e247e-0efb-4e9d-98c0-ca454a383057",

@@ -15,9 +15,9 @@ debugFaceY = 0
 numFrames = 8
 image_index = 2
 
-topSpeed = 5 + 5 * global.player_top_speed[slot];
-accelerationSpeed = 5 + 5 * global.player_acceleration[slot];
-turnSpeed = 50 + 50 * global.player_turning[slot];
+//topSpeed = 5 + 5 * global.player_top_speed[slot];
+accelerationSpeed = 10 + 10 * global.player_acceleration[slot];
+turnSpeed = 100 + 50 * global.player_turning[slot];
 damagePotential = 1 + 1 * global.player_damage_potential[slot];
 hitpoints = 10 + 100 * global.player_hitpoints[slot];
 maxHitpoints = hitpoints;

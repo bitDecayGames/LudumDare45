@@ -25,6 +25,7 @@ var numLaps = 3;
 for (var i = 0; i < playerCount; ++i) {
 	var lap = global.player_lap[i];
 	if lap >= numLaps + 1 {
+		global.store_current_slot = 0;
 		room_goto(rm_RaceResults);
 	}
 }
