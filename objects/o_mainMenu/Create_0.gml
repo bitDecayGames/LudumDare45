@@ -1,5 +1,9 @@
 /// @description main menu logic
 
+audio_play_sound(bgm_shotguneveryround, 10, true);
+
+randomize();
+
 menuX = x
 menuY = y
 
