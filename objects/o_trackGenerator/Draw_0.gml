@@ -44,3 +44,5 @@ for(var i = 0; i < array_length_1d(grid); i++) {
 	
 	draw_sprite_ext(spr, 0, startX + offset, startY + offset, 1, 1, 0, c_white, 1);
 }
+
+vertex_submit(vBuff, pr_trianglestrip, -1);
