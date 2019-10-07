@@ -13,9 +13,10 @@ if (isPlayer) {
 	var pathPointX = path_get_point_x(path, pointIdx);
 	var pathPointY = path_get_point_y(path, pointIdx);
 	
+	// Point at objective
 	var steerDir = point_direction(x, y, pathPointX, pathPointY);
 	var steerRot = angle_difference(-phy_rotation, steerDir);
-		
+	
 	// Steer car
 	if steerRot < 0 {
 		turnLeft = true;
@@ -24,9 +25,14 @@ if (isPlayer) {
 	}
 	// Otherwise, drive straight!
 
-	// For now, always accelerate
-	accelerate = keyboard_check(vk_up);
-		
+	// Determine if we should be accelrating or decelerating
+//	var distanceToPoint = point_distance(x, y, pathPointX, pathPointY);
+//	var gettingClose = distanceToPoint <= pointDistance * 2;
+	if abs(steerRot) > 40 {
+		decelerate = true;
+	}
+	accelerate = !decelerate;
+
 	debugTargetPointX = pathPointX;
 	debugTargetPointY = pathPointY;
 
@@ -81,7 +87,14 @@ debugForceX = forceX;
 debugForceY = forceY;
 
 // Make skids
-if abs(phy_speed_x) > minSkidSpeed || abs(phy_speed_y) > minSkidSpeed {
+var velDir = point_direction(x, y, x + phy_speed_x, y + phy_speed_y);
+var rotDir = point_direction(x, y, x + xRot, y + yRot);
+var skidRot = angle_difference(velDir, rotDir);
+var gottaGoFast = abs(phy_speed_x) > minSkidSpeed || abs(phy_speed_y) > minSkidSpeed
+
+debugStr = string(round(skidRot));
+
+if abs(skidRot) > 30 && gottaGoFast {
 	var arrLen = array_height_2d(wheelArray);
 	for (var i = 0; i < arrLen; i++) {
 		var xDir = wheelArray[i, 0];

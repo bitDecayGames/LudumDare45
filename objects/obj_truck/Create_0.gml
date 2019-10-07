@@ -10,8 +10,8 @@ debugFaceY = 0
 numFrames = 8
 image_index = 2
 
-accelerationSpeed = 2
-turnSpeed = 50
+accelerationSpeed = 10
+turnSpeed = 100
 
 minSkidSpeed = 0.5
 

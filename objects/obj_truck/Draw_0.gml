@@ -4,9 +4,8 @@ if (debug) {
 	draw_set_color(c_ltgray);
 	draw_text(x - 50, y + 50, debugStr);
 	draw_text(debugTargetPointX, debugTargetPointY, "X");
-//	draw_line_width(x, y, x + debugSeekX * 30, y + debugSeekY * 30, 3);
 
-	// Velcity
+	// Velocity
 	draw_set_color(c_white)
 	draw_line_width(x, y, x + phy_linear_velocity_x, y + phy_linear_velocity_y, 3);
 
