@@ -20,6 +20,8 @@ if (hasInit){
 		hasBuilt = true;
 		
 		racerName = global.player_name[slot];
+		
+		color = global.player_colors[slot];
 	} else {
 		if (x > targetX) x -= flyInSpeed;
 	}
