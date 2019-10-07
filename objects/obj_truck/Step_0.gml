@@ -9,6 +9,7 @@ var turnLeft = false
 var turnRight = false
 var accelerate = false
 var decelerate = false
+var dropOilSlick = false
 
 // Check checkpoint/lap/navigation points
 var pathPointX = path_get_point_x(path, pointIdx);
@@ -39,6 +40,7 @@ if (isPlayer) {
 	turnRight = keyboard_check(vk_right) || gamepad_button_check(slot, gp_padr);
 	accelerate = keyboard_check(vk_up) || gamepad_button_check(slot, gp_face1);
 	decelerate = keyboard_check(vk_down) || gamepad_button_check(slot, gp_face2);
+	dropOilSlick = keyboard_check(vk_space) || gamepad_button_check(slot, gp_face3);
 } else {
 	// AI	
 	// Point at objective
@@ -60,6 +62,16 @@ if (isPlayer) {
 		decelerate = true;
 	}
 	accelerate = !decelerate;
+}
+
+var numOils = global.player_oilslick[slot];
+if dropOilSlick && alarm[2] <= 0 && numOils > 0 {
+	global.player_oilslick[slot] = numOils - 1;
+	alarm[2] = room_speed * 2;
+	var mySlot = slot;
+	with(instance_create(x, y, obj_oil)) {
+		createdBy = mySlot;
+	}
 }
 
 var rotation = phy_rotation;
