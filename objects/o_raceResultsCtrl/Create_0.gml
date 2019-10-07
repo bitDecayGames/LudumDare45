@@ -4,6 +4,8 @@ raceResultHeight = 90;
 initialDistance = 1200;
 distanceOffset = 200;
 
+audio_play_sound(sfx_victory, 0, false);
+
 var numberOfRacers = array_length_1d(global.player_name);
 for (var i = 0; i < numberOfRacers; ++i) {
 	var slot = -1;

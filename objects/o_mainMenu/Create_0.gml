@@ -1,6 +1,6 @@
 /// @description main menu logic
 
-audio_play_sound(bgm_shotguneveryround, 10, true);
+if (!audio_is_playing(bgm_shotguneveryround)) audio_play_sound(bgm_shotguneveryround, 10, true);
 
 randomize();
 

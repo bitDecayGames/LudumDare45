@@ -10,11 +10,13 @@ if (keyboardContinue || gamepadContinue) {
 		if (global.player_is_human[i]) {
 			foundAnotherHuman = true;
 			global.store_current_slot = i;
+			audio_play_sound(sfx_select, 0, false);
 			room_goto(rm_Shop);
 			break;
 		}
 	}
 	if (!foundAnotherHuman){
+		audio_play_sound(sfx_select, 0, false);
 		room_goto(rm_Game);
 	}
 }
@@ -41,5 +43,6 @@ else if (global.store_current_selection_index < 0) global.store_current_selectio
 
 
 if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_select)) {
+	audio_play_sound(sfx_hover, 0, false);
 	room_goto(rm_MainMenu);	
 }

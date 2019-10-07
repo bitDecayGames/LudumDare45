@@ -1,5 +1,7 @@
 /// @description create players based on whoever joined
 
+audio_play_sound(sfx_321, 100, false);
+
 // ////////////////////
 // CONSTANTS
 placeSpace = 90;

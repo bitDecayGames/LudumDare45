@@ -15,3 +15,8 @@ for (var i = 0; i < playerCount; ++i){
 	}
 	curY[i] = cur;
 }
+
+if (keyboard_check_pressed(vk_escape)){
+	audio_play_sound(sfx_victory, 100, false);
+	room_goto(rm_MainMenu);
+}
