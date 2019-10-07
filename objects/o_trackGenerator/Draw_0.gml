@@ -67,35 +67,37 @@ if debug {
 	}
 }
 
-// Track edge
-var trackEdgeWidth = 3;
+if(debug) {
+	// Track edge
+	var trackEdgeWidth = 3;
 
-var numPoints = path_get_number(trackEdge1);
-for (var i = 0; i < numPoints; i++) {
-	var nextI = i + 1;
-	if nextI > numPoints - 1 {
-		nextI = 0;	
-	}
+	var numPoints = path_get_number(trackEdge1);
+	for (var i = 0; i < numPoints; i++) {
+		var nextI = i + 1;
+		if nextI > numPoints - 1 {
+			nextI = 0;	
+		}
 	
-	var edgePointX = path_get_point_x(trackEdge1, i);
-	var edgePointY = path_get_point_y(trackEdge1, i);
-	var nextX = path_get_point_x(trackEdge1, nextI);
-	var nextY = path_get_point_y(trackEdge1, nextI);
-	draw_set_color(c_olive);
-	draw_line_width(edgePointX, edgePointY, nextX, nextY, trackEdgeWidth);
-}
+		var edgePointX = path_get_point_x(trackEdge1, i);
+		var edgePointY = path_get_point_y(trackEdge1, i);
+		var nextX = path_get_point_x(trackEdge1, nextI);
+		var nextY = path_get_point_y(trackEdge1, nextI);
+		draw_set_color(c_olive);
+		draw_line_width(edgePointX, edgePointY, nextX, nextY, trackEdgeWidth);
+	}
 
-var numPoints = path_get_number(trackEdge2);
-for (var i = 0; i < numPoints; i++) {
-	var nextI = i + 1;
-	if nextI > numPoints - 1 {
-		nextI = 0;	
-	}
+	var numPoints = path_get_number(trackEdge2);
+	for (var i = 0; i < numPoints; i++) {
+		var nextI = i + 1;
+		if nextI > numPoints - 1 {
+			nextI = 0;	
+		}
 	
-	var edgePointX = path_get_point_x(trackEdge2, i);
-	var edgePointY = path_get_point_y(trackEdge2, i);
-	var nextX = path_get_point_x(trackEdge2, nextI);
-	var nextY = path_get_point_y(trackEdge2, nextI);
-	draw_set_color(c_olive);
-	draw_line_width(edgePointX, edgePointY, nextX, nextY, trackEdgeWidth);
+		var edgePointX = path_get_point_x(trackEdge2, i);
+		var edgePointY = path_get_point_y(trackEdge2, i);
+		var nextX = path_get_point_x(trackEdge2, nextI);
+		var nextY = path_get_point_y(trackEdge2, nextI);
+		draw_set_color(c_olive);
+		draw_line_width(edgePointX, edgePointY, nextX, nextY, trackEdgeWidth);
+	}
 }
