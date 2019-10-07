@@ -30,7 +30,7 @@ for(var i = 0; i < array_length_1d(orderedTrack); i++) {
 		draw_text(startX, startY, str);	
 	}
 
-	draw_sprite_ext(trackPiece, 0, startX + offset, startY + offset, 1, 1, rot, c_white, 1);
+	draw_sprite_ext(trackPiece, 0, startX + offset + global.track_x_offset, startY + offset, 1, 1, rot, c_white, 1);
 }
 
 

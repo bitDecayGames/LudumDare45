@@ -22,7 +22,7 @@ for (var i = 0; i < gridLen; i++) {
 	var startX = (gridPos mod _width) * _chunk_size
 	var startY = floor(gridPos / _width) * _chunk_size
 
-	var path1X = startX + offset;
+	var path1X = startX + offset + global.track_x_offset;
 	var path1Y = startY + offset;
 	path_add_point(newPath, path1X, path1Y, 100);	
 }

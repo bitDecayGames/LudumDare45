@@ -1,4 +1,5 @@
 /// @description Insert description here
+global.track_x_offset = 50;
 debug = false;
 randomize();
 
@@ -45,7 +46,7 @@ global.trackPath = sc_getTrackAlignedPath(width, chunk_size, orderedTrack, track
 // Collision Gen
 //Level
 var levelPath = global.trackPath;
-var pathWidth = 128;
+var pathWidth = 150;
 var pathColor = c_white;
 
 //Vertex
