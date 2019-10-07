@@ -36,11 +36,11 @@ if(nearPathPoint) {
 }
 
 if (isPlayer) {
-	turnLeft = keyboard_check(vk_left) || gamepad_button_check(slot, gp_padl);
-	turnRight = keyboard_check(vk_right) || gamepad_button_check(slot, gp_padr);
-	accelerate = keyboard_check(vk_up) || gamepad_button_check(slot, gp_face1);
-	decelerate = keyboard_check(vk_down) || gamepad_button_check(slot, gp_face2);
-	dropOilSlick = keyboard_check(vk_space) || gamepad_button_check(slot, gp_face3);
+	turnLeft = keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(slot, gp_padl);
+	turnRight = keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(slot, gp_padr);
+	accelerate = keyboard_check(vk_up) || keyboard_check(ord("W")) || gamepad_button_check(slot, gp_face1);
+	decelerate = keyboard_check(vk_down) || keyboard_check(ord("S")) || gamepad_button_check(slot, gp_face2);
+	dropOilSlick = keyboard_check(vk_space) || gamepad_button_check(slot, gp_face3) || gamepad_button_check(slot, gp_face4);
 } else {
 	// AI	
 	// Point at objective

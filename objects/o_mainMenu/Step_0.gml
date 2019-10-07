@@ -4,7 +4,8 @@ if (keyboard_check_pressed(vk_escape) || gamepad_button_check_pressed(0, gp_sele
 	game_end();	
 }
 
-selectedIndex += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up)
+if (keyboard_check_pressed(vk_down) || keyboard_check_pressed(ord("S"))) selectedIndex += 1;
+if (keyboard_check_pressed(vk_up) || keyboard_check_pressed(ord("W"))) selectedIndex -= 1;
 
 
 if (gamepad_button_check_pressed(0, gp_padu)) {
