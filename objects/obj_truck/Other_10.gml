@@ -30,6 +30,9 @@ alarm[0] = 0;
 alarm[1] = 0;
 prevLinDamp = phy_linear_damping;
 
+// Hack for laps
+incrLap = false;
+
 // AI stats
 // https://www.reddit.com/r/gamemaker/comments/4ieosj/can_i_use_game_maker_pathfinding_and_physics_at/d2xjaa7/
 path = global.trackPath;

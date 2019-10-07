@@ -19,12 +19,18 @@ debugTargetPointY = pathPointY;
 var nearPathPoint = point_distance(x, y, pathPointX, pathPointY) < pointDistance;
 if(nearPathPoint) {
 	pointIdx++;
+	
+	if pointIdx >= 0 && incrLap {
+		incrLap = false;
+		global.player_lap[slot] = global.player_lap[slot] + 1;
+	}
+	
 	global.player_checkpoint[slot] = global.player_checkpoint[slot] + 1;
 	global.player_last_checkpoint_time[slot] = current_time;
 	
 	if(pointIdx >= numPoints) {
 		pointIdx = 0;
-		global.player_lap[slot] = global.player_lap[slot] + 1;
+		incrLap = true;
 	}
 }
 

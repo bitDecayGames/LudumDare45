@@ -57,7 +57,13 @@ if debug {
 	for (var i = 0; i < numPoints; i++) {
 		var pathPointX = path_get_point_x(path, i);
 		var pathPointY = path_get_point_y(path, i);
-		draw_circle_colour(pathPointX, pathPointY, 96, 0, c_red, true);
+		if i == 0 {
+			draw_circle_colour(pathPointX, pathPointY, 96, 0, c_white, true);
+		} else if i >= numPoints - 1 {
+			draw_circle_colour(pathPointX, pathPointY, 96, 0, c_purple, true);
+		} else {
+			draw_circle_colour(pathPointX, pathPointY, 96, 0, c_red, true);
+		}
 	}
 }
 

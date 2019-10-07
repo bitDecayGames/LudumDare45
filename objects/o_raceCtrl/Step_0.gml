@@ -20,3 +20,11 @@ if (keyboard_check_pressed(vk_escape)){
 	audio_play_sound(sfx_victory, 100, false);
 	room_goto(rm_MainMenu);
 }
+// End race
+var numLaps = 3;
+for (var i = 0; i < playerCount; ++i) {
+	var lap = global.player_lap[i];
+	if lap >= numLaps + 1 {
+		room_goto(rm_RaceResults);
+	}
+}
