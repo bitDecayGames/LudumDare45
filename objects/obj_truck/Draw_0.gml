@@ -44,3 +44,7 @@ if (debug) {
 	draw_set_color(c_yellow);
 	draw_arrow(x, y, x + debugHitX * 30, y + debugHitY * 30, 10);
 }
+
+if (isPlayer && showPlayerIndicator) {
+	draw_sprite(sp_playerIndicator, slot, x, y);
+}
