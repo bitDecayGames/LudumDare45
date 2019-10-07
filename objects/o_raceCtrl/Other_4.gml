@@ -3,6 +3,7 @@ var path = global.trackPath;
 var startX = path_get_point_x(path, 0)
 var startY = path_get_point_y(path, 0)
 
+show_debug_message("Starting players at: " + string(startX) + ", " + string(startY));
 for (var i = 0; i < playerCount; ++i){
 	with(instance_create(startX + irandom(10), startY + irandom(10), obj_truck)){
 		slot = i;
