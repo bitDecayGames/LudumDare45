@@ -3,6 +3,8 @@
 var keyboardContinue = slot == 0 && keyboard_check_pressed(vk_enter);
 var gamepadContinue = gamepad_button_check_pressed(slot, gp_start);
 
+if (!global.player_is_human[global.store_current_slot]) keyboardContinue = true; // force it to go if no human
+
 if (keyboardContinue || gamepadContinue) {
 	var playerCount = array_length_1d(global.player_name);
 	var foundAnotherHuman = false;
