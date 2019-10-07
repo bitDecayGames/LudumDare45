@@ -26,6 +26,8 @@ minSkidSpeed = 0.5
 
 // Can be hit
 alarm[0] = 0
+// Oil
+alarm[1] = 0
 
 // AI stats
 // https://www.reddit.com/r/gamemaker/comments/4ieosj/can_i_use_game_maker_pathfinding_and_physics_at/d2xjaa7/

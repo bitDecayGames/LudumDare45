@@ -4,7 +4,7 @@ if alarm[0] < 0 {
 	var mag = point_distance(other.x, other.y, other.x + other.phy_speed_x, other.y + other.phy_speed_y);
 	var dmg = damagePotential * mag;
 
-	other.hitpoints -= dmg * 5;
+	other.hitpoints -= dmg;
 	
 	var sparkX = (x + other.x) / 2;
 	var sparkY = (y + other.y) / 2;
