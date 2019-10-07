@@ -24,11 +24,11 @@ maxHitpoints = hitpoints;
 
 minSkidSpeed = 0.5
 
-/********* TODO fixme! **********/
 // Can be hit
-alarm[0] = 5000 // 0
+alarm[0] = 0;
 // Oil
-alarm[1] = 5000 // 0
+alarm[1] = 0;
+prevLinDamp = phy_linear_damping;
 
 // AI stats
 // https://www.reddit.com/r/gamemaker/comments/4ieosj/can_i_use_game_maker_pathfinding_and_physics_at/d2xjaa7/
@@ -36,7 +36,7 @@ path = global.trackPath;
 // mp_grid_path(path); // assumed path points to the goal
 numPoints = path_get_number(path); // get the number of nodes of that path
 pointIdx = 0; // path to the first node first... firstly.
-pointDistance = 64; // Distance from a node required before targeting the next one
+pointDistance = 192; // Distance from a node required before targeting the next one
 
 // Use here to swap between AI and player control
 isPlayer = global.player_is_human[slot];

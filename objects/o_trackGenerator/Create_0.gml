@@ -1,4 +1,5 @@
 /// @description Insert description here
+debug = false;
 randomize();
 
 width = 6;
@@ -37,7 +38,7 @@ grid = sc_calcGrid(width, height, startPos)
 orderedTrack = sc_getOrderedTrack(width, height, startPos, grid)
 trackDirs = sc_getTrackDirs(grid, orderedTrack)
 orderedVacantSprites = sc_getOrderedVacancies(grid)
-global.trackPath = sc_getTrackAlignedPath(width, chunk_size, orderedTrack)
+global.trackPath = sc_getTrackAlignedPath(width, chunk_size, orderedTrack, trackDirs)
 /********************************************************************/
 
 
@@ -77,10 +78,11 @@ for(var i=0; i<=1; i+=incr){
 	var pyn = path_get_y(levelPath, pnext);
 	var pdir = point_direction(px, py, pxn, pyn);
  
-	var px1 = px + lengthdir_x(pathWidth/2, pdir-90);
-	var py1 = py + lengthdir_y(pathWidth/2, pdir-90);
-	var px2 = px + lengthdir_x(pathWidth/2, pdir+90);
-	var py2 = py + lengthdir_y(pathWidth/2, pdir+90);
+	var rotDeg = 90;
+	var px1 = px + lengthdir_x(pathWidth/2, pdir - rotDeg);
+	var py1 = py + lengthdir_y(pathWidth/2, pdir - rotDeg);
+	var px2 = px + lengthdir_x(pathWidth/2, pdir + rotDeg);
+	var py2 = py + lengthdir_y(pathWidth/2, pdir + rotDeg);
  
 	vertex_position(vBuff, px1, py1);
 	//vertex_colour(vBuff, pathColor, 1);

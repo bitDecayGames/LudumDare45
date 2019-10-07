@@ -50,7 +50,7 @@ if (isPlayer) {
 	// Determine if we should be accelrating or decelerating
 //	var distanceToPoint = point_distance(x, y, pathPointX, pathPointY);
 //	var gettingClose = distanceToPoint <= pointDistance * 2;
-	if abs(steerRot) > 40 {
+	if abs(steerRot) > 90 {
 		decelerate = true;
 	}
 	accelerate = !decelerate;

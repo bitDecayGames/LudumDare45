@@ -24,8 +24,11 @@ for(var i = 0; i < array_length_1d(orderedTrack); i++) {
 	else if(dir == trackDir.u2r) {
 		rot = 270;	
 	}
-	var str = string(i) + " " + string(dirString[grid[gridPos]]) + string(rot) + " " + string(gridPos) + " " + string(startX) + ", " + string(startY)
-	draw_text(startX, startY, str);
+	
+	if debug {
+		var str = string(i) + " " + string(dirString[grid[gridPos]]) + string(rot) + " " + string(gridPos) + " " + string(startX) + ", " + string(startY)
+		draw_text(startX, startY, str);	
+	}
 
 	draw_sprite_ext(trackPiece, 0, startX + offset, startY + offset, 1, 1, rot, c_white, 1);
 }
@@ -37,12 +40,23 @@ for(var i = 0; i < array_length_1d(grid); i++) {
 	
 	var startX = (i mod width) * chunk_size
 	var startY = floor(i / width) * chunk_size
-	
-	draw_text(startX, startY, "Sprite " + string(i));
+	if debug {
+		draw_text(startX, startY, "Sprite " + string(i));	
+	}
 	// var vacantSprite = vacantSprites[i]; //ds_list_read(vacantSpriteList, vacantIdx++)
 	//show_debug_message(string(vacantSprite))
 	
 	draw_sprite_ext(spr, 0, startX + offset, startY + offset, 1, 1, 0, c_white, 1);
 }
 
-vertex_submit(vBuff, pr_trianglestrip, -1);
+vertex_submit(vBuff, pr_linestrip, -1);
+
+//if debug {
+	var path = global.trackPath;
+	var numPoints = path_get_number(path);
+	for (var i = 0; i < numPoints; i++) {
+		var pathPointX = path_get_point_x(path, i);
+		var pathPointY = path_get_point_y(path, i);
+		draw_circle_colour(pathPointX, pathPointY, 96, 0, c_red, true);
+	}
+//}
