@@ -2,7 +2,7 @@
     "id": "6f4991d7-2777-4b1b-aa67-95c2bafaea2b",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_storePowerUp_turbo",
+    "name": "o_storePowerUp_shield",
     "eventList": [
         {
             "id": "ce531f97-1a5d-4442-9a88-c5473a9a0182",
@@ -33,7 +33,7 @@
             "mvc": "1.0",
             "objectId": "aaf5dd3c-1f7b-4367-a275-fabb8c379b73",
             "propertyId": "50ec9758-0904-4d5e-8b06-b20136a8862f",
-            "value": "Turbo"
+            "value": "Armor"
         },
         {
             "id": "2b97afea-7f12-4085-a337-57eb7ac3577d",
@@ -41,7 +41,7 @@
             "mvc": "1.0",
             "objectId": "aaf5dd3c-1f7b-4367-a275-fabb8c379b73",
             "propertyId": "8dcf9f26-15bc-4de7-85ef-e3dc26d18810",
-            "value": "3"
+            "value": "1"
         }
     ],
     "parentObjectId": "aaf5dd3c-1f7b-4367-a275-fabb8c379b73",
@@ -62,6 +62,6 @@
         
     ],
     "solid": false,
-    "spriteId": "89673029-ee7c-4c4c-807a-2c723e33e062",
+    "spriteId": "b0c79c75-a7b6-455c-a0a8-6e4af5d5a485",
     "visible": true
 }

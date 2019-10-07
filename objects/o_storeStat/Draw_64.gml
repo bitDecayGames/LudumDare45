@@ -19,7 +19,7 @@ if (! maxed) draw_sprite(sp_shopArrow, 0, x + totalPills * pillSpacing, y);
 
 draw_set_halign(fa_left);
 draw_set_font(fnt_arial);
-draw_set_color(c_gray);
+draw_set_color(c_dkgray);
 draw_text(x + textOffsetX, y + textOffsetY, labelName);
 
 var costX = x + totalPills * pillSpacing + costOffsetX;

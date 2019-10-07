@@ -41,7 +41,7 @@ global.player_place[slot] = 0;
 global.player_is_human[slot] = isHuman;
 
 global.player_oilslick[slot] = 0;
-global.player_turbo[slot] = 0;
+global.player_armor[slot] = 0;
 
 global.player_lap[slot] = 1;
 global.player_checkpoint[slot] = 0;
