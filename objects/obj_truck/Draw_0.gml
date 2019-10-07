@@ -4,7 +4,7 @@ shader_set(shd_colorMask);
 shader_set_uniform_f(u_red_tint, color[0], color[1], color[2]);
 shader_set_uniform_f(u_green_tint, color[3], color[4], color[5]);
 shader_set_uniform_f(u_blue_tint, color[6], color[7], color[8]);
-shader_set_uniform_f(u_uptime, get_timer() / 1000000);
+shader_set_uniform_f(u_uptime, takenDamage ? get_timer() / 1000000 : 0);
 
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, image_blend, image_alpha);
 

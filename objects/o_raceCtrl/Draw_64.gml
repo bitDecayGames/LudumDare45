@@ -22,6 +22,11 @@ for (var i = 0; i < playerCount; ++i){
 	
 	draw_sprite_ext(sp_portraits, global.player_portrait[i] * 3 + 2, placePortraitOffsetX, _y + placePortraitOfffsetY, placePortraitScale, placePortraitScale, 0, c_white, 1);
 	
+	// Kills
+	draw_set_color(c_white);
+	draw_text(placePortraitOffsetX + 10, _y + placePortraitOfffsetY + 5, "K: " + string(global.player_kills[i]));
+	draw_set_color(c_dkgray);
+	
 	var iconCount = 0;
 	for (var k = 0; k < global.player_armor[i]; ++k) {
 		draw_sprite_ext(sp_armor, 1, iconOffsetX + iconCount * iconSpace, _y + iconOffsetY, iconScale, iconScale, 0, c_white, 1);

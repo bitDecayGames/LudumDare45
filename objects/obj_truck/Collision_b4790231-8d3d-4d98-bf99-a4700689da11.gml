@@ -10,6 +10,12 @@ if alarm[0] < 0 {
 	}
 
 	other.hitpoints -= dmg;
+	takenDamage = true;
+	alarm_set(3, 60);
+	
+	if other.hitpoints <= 0 {
+		global.player_kills[slot] = global.player_kills[slot] + 1
+	}
 	
 	var sparkX = (x + other.x) / 2;
 	var sparkY = (y + other.y) / 2;
