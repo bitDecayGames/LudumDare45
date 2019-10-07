@@ -36,8 +36,9 @@ if(nearPathPoint) {
 }
 
 if (isPlayer) {
-	turnLeft = keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(slot, gp_padl);
-	turnRight = keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(slot, gp_padr);
+	var hStick = gamepad_axis_value(slot, gp_axislh);
+	turnLeft = keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_check(slot, gp_padl) || hStick < -joystickThreshold;
+	turnRight = keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_check(slot, gp_padr) || hStick > joystickThreshold;
 	accelerate = keyboard_check(vk_up) || keyboard_check(ord("W")) || gamepad_button_check(slot, gp_face1);
 	decelerate = keyboard_check(vk_down) || keyboard_check(ord("S")) || gamepad_button_check(slot, gp_face2);
 	dropOilSlick = keyboard_check(vk_space) || gamepad_button_check(slot, gp_face3) || gamepad_button_check(slot, gp_face4);

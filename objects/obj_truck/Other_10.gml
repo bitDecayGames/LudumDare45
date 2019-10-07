@@ -31,6 +31,8 @@ alarm[1] = 50;
 prevLinDamp = phy_linear_damping;
 // Oil create
 alarm[2] = -1
+// player indicator
+alarm[4] = room_speed * 20;
 
 // Hack for laps
 incrLap = false;
