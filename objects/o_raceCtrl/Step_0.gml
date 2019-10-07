@@ -21,7 +21,7 @@ if (keyboard_check_pressed(vk_escape)){
 	room_goto(rm_MainMenu);
 }
 // End race
-var numLaps = 0;
+var numLaps = 3;
 for (var i = 0; i < playerCount; ++i) {
 	var lap = global.player_lap[i];
 	if lap >= numLaps + 1 {
