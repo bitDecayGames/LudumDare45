@@ -5,7 +5,16 @@ var prefix = choose(
 	"Mr.",
 	"Mrs.",
 	"Fat",
-	"Old Mr."
+	"Old Mr.",
+	"Sultan",
+	"Stinky",
+	"Speedy",
+	"Lazy",
+	"Blind",
+	"Sir",
+	"Madam",
+	"Poor",
+	"Crazy",
 );
 
 var firstName = choose(
@@ -20,7 +29,41 @@ var firstName = choose(
 	"Jonny",
 	"Jake",
 	"Joseph",
-	"Mike"
+	"Mike",
+	"Luke",
+	"Logan",
+	"Tanner",
+	"Tristan",
+	"Eric",
+	"Bui",
+	"Corwin",
+	"Brittany",
+	"Francis",
+	"Frank",
+	"Forest",
+	"Philip",
+	"Will",
+	"William",
+	"Bill",
+	"Paul",
+	"Burt",
+	"Bart",
+	"Charles",
+	"Ben",
+	"Joe",
+	"Chandler",
+	"Kat",
+	"Sharon",
+	"Jane",
+	"Michael",
+	"Janet",
+	"Dwight",
+	"Jim",
+	"Angela",
+	"Karren",
+	"Pam",
+	"Andy",
+	"Kelly",
 );
 
 var nickname = choose(
@@ -32,7 +75,15 @@ var nickname = choose(
 	"The Teeth",
 	"19 Wheels",
 	"Scar",
-	"Glass Jaw"
+	"Glass Jaw",
+	"The Fisher",
+	"9 Lives",
+	"Ball Dropper",
+	"The Beast",
+	"Pickle",
+	"The Pacifist",
+	"Taco Muncher",
+	"Nip Twister",
 );
 
 var lastName = choose(
@@ -45,14 +96,21 @@ var lastName = choose(
 	"Smith",
 	"Sniff",
 	"Blaze",
-	"Himpley"
+	"Himpley",
+	"Scott",
+	"Bernard",
+	"Howard",
+	"Martin",
 );
 
 var suffix = choose(
 	"Phd.",
 	"Esquire",
 	"(Deceased)",
-	"III"
+	"III",
+	"LPC",
+	"LLC",
+	"Inc."
 );
 
 
@@ -65,8 +123,7 @@ suff = 16
 var combo = choose(
 	first | last | suff,
 	first | nick | last,
-	pref | first,
-	nick
+	pref | first
 );
 
 var name = "";
