@@ -20,9 +20,10 @@ void main()
 	vec3 packed_tex = vec3(red_mask + green_mask + blue_mask);
 	
 	// Scan lines
-	//vec2 offset = vec2(v_vTexcoord.x, mod(uptime, .5) + v_vTexcoord.y);
-	//vec3 mask = vec3((v_vTexCoord.y + mod(uptime, .5)) * packed_tex);
-	
+	vec3 mask = packed_tex;
+	if(uptime > 0) {
+		mask = vec3((mod(uptime * 100, 3) + .5) * packed_tex);
+	}
 
-	gl_FragColor = vec4(packed_tex, base_col.a);
+	gl_FragColor = vec4(mask, base_col.a);
 }
