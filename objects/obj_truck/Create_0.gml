@@ -1,4 +1,4 @@
-debug = true
+debug = false
 debugStr = ""
 debugTargetPointX = 0
 debugTargetPointY = 0

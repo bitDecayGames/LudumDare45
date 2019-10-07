@@ -11,7 +11,7 @@
             "id": "1a93aa48-0238-40b9-a5ea-07db38a62114",
             "modelName": "GMPathPoint",
             "mvc": "1.0",
-            "x": 160,
+            "x": 512,
             "y": 64,
             "speed": 100
         },
@@ -176,107 +176,219 @@
             "speed": 100
         },
         {
-            "id": "249717ed-8b35-40ec-9f85-fb76b3dd691d",
-            "modelName": "GMPathPoint",
-            "mvc": "1.0",
-            "x": 480,
-            "y": 352,
-            "speed": 100
-        },
-        {
-            "id": "4d7f2b8e-191f-43a9-8122-3c9c6dc336ad",
+            "id": "26682c49-f9d7-4901-b0bc-4dcb037985a1",
             "modelName": "GMPathPoint",
             "mvc": "1.0",
             "x": 544,
-            "y": 256,
+            "y": 320,
             "speed": 100
         },
         {
-            "id": "b4054f8c-5b82-4d78-8162-cbe165e5a0ee",
+            "id": "5dfa35c0-e04d-4a11-b3f8-aee6050d27f5",
             "modelName": "GMPathPoint",
             "mvc": "1.0",
-            "x": 640,
+            "x": 608,
             "y": 256,
             "speed": 100
         },
         {
-            "id": "84a6d655-fef3-472a-981e-ea15ba023f41",
+            "id": "615ffeb2-32c1-4eab-9f96-f2998b54debf",
             "modelName": "GMPathPoint",
             "mvc": "1.0",
             "x": 672,
+            "y": 160,
+            "speed": 100
+        },
+        {
+            "id": "01ad1ff7-02a4-4c03-b2ca-90b6d3a47152",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 576,
+            "y": 128,
+            "speed": 100
+        },
+        {
+            "id": "ee8aa55c-6a54-44a1-b544-ff73064fa3ac",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 480,
+            "y": 128,
+            "speed": 100
+        },
+        {
+            "id": "abef633f-60cb-415f-9e08-aa2560469da9",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 416,
+            "y": 224,
+            "speed": 100
+        },
+        {
+            "id": "5b399e3c-39bf-4880-b0f0-ba29cdcd671e",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 352,
             "y": 288,
             "speed": 100
         },
         {
-            "id": "a2cb62ef-c056-4c2c-9b57-f45e4f235eba",
+            "id": "de0f98c2-40a5-48d3-8204-3701bbe3b35a",
             "modelName": "GMPathPoint",
             "mvc": "1.0",
-            "x": 704,
-            "y": 384,
-            "speed": 100
-        },
-        {
-            "id": "5607caf3-398a-41d4-b74c-d3b4ebd361b7",
-            "modelName": "GMPathPoint",
-            "mvc": "1.0",
-            "x": 704,
-            "y": 480,
-            "speed": 100
-        },
-        {
-            "id": "ea4fea1d-0690-4097-ad1b-7916b5215747",
-            "modelName": "GMPathPoint",
-            "mvc": "1.0",
-            "x": 640,
-            "y": 544,
-            "speed": 100
-        },
-        {
-            "id": "3e3c187f-b748-40eb-a729-f7f79af10ada",
-            "modelName": "GMPathPoint",
-            "mvc": "1.0",
-            "x": 512,
-            "y": 608,
-            "speed": 100
-        },
-        {
-            "id": "c4d5b699-5d6f-4462-9a94-15154b0f17fd",
-            "modelName": "GMPathPoint",
-            "mvc": "1.0",
-            "x": 384,
-            "y": 576,
-            "speed": 100
-        },
-        {
-            "id": "5b1d22f3-6250-480b-a866-f43266b96703",
-            "modelName": "GMPathPoint",
-            "mvc": "1.0",
-            "x": 320,
-            "y": 512,
-            "speed": 100
-        },
-        {
-            "id": "788778f1-4e4e-4cb3-a54a-1d37da3ed6cf",
-            "modelName": "GMPathPoint",
-            "mvc": "1.0",
-            "x": 288,
+            "x": 352,
             "y": 416,
             "speed": 100
         },
         {
-            "id": "a1dbc494-6dda-4fbe-ba3e-6a54232f1fae",
+            "id": "20fd788b-ec2e-47ef-8b3f-0323bd197a15",
             "modelName": "GMPathPoint",
             "mvc": "1.0",
-            "x": 256,
-            "y": 352,
+            "x": 384,
+            "y": 512,
             "speed": 100
         },
         {
-            "id": "a74e2dc1-d35a-4727-99a6-16578a24a06b",
+            "id": "d1355e3c-2d5e-430d-9d81-f35ac808957e",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 448,
+            "y": 576,
+            "speed": 100
+        },
+        {
+            "id": "d0cfbd81-be99-4bb8-9e56-a5ea31663cb3",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 576,
+            "y": 608,
+            "speed": 100
+        },
+        {
+            "id": "c04744bd-d5bf-4d7b-946a-3830945c095f",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 672,
+            "y": 576,
+            "speed": 100
+        },
+        {
+            "id": "50c8d556-e9d8-4572-95f4-4694c5632a60",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 864,
+            "y": 544,
+            "speed": 100
+        },
+        {
+            "id": "14c5bf1a-ace0-476b-925e-b022e0987257",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 928,
+            "y": 640,
+            "speed": 100
+        },
+        {
+            "id": "f9dfbf2f-4980-463e-945b-59792d656e32",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 896,
+            "y": 672,
+            "speed": 100
+        },
+        {
+            "id": "5f77d8fc-0ac5-4b0f-992a-abd1fdf2165d",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 704,
+            "y": 704,
+            "speed": 100
+        },
+        {
+            "id": "00d6387e-f6e8-464b-9ba6-9b5be9fa98a4",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 544,
+            "y": 704,
+            "speed": 100
+        },
+        {
+            "id": "604c5560-f4ea-4e66-a8fa-431a56d000bc",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 448,
+            "y": 672,
+            "speed": 100
+        },
+        {
+            "id": "8b7a0022-2670-4d40-b5b4-a1492c30095c",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 352,
+            "y": 672,
+            "speed": 100
+        },
+        {
+            "id": "a3bda47b-0043-4d38-be9a-6fd605e725e9",
             "modelName": "GMPathPoint",
             "mvc": "1.0",
             "x": 256,
-            "y": 256,
+            "y": 576,
+            "speed": 100
+        },
+        {
+            "id": "0029615d-9e70-48f0-81fc-2728f61e27b3",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 192,
+            "y": 480,
+            "speed": 100
+        },
+        {
+            "id": "76793306-d1be-4163-a756-2b28d15ee468",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 192,
+            "y": 384,
+            "speed": 100
+        },
+        {
+            "id": "79a7272a-a8fe-4201-aa9f-367282eec88b",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 160,
+            "y": 288,
+            "speed": 100
+        },
+        {
+            "id": "0e84415c-fdae-4866-8064-b80d858050f8",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 192,
+            "y": 192,
+            "speed": 100
+        },
+        {
+            "id": "c87cc50e-9d43-41ef-a90e-4fff490649fb",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 224,
+            "y": 128,
+            "speed": 100
+        },
+        {
+            "id": "df4f5b61-f909-459c-921f-d3debbbb65b0",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 288,
+            "y": 64,
+            "speed": 100
+        },
+        {
+            "id": "7bb5d718-3a3c-4c2f-ac27-8c46813f9183",
+            "modelName": "GMPathPoint",
+            "mvc": "1.0",
+            "x": 384,
+            "y": 64,
             "speed": 100
         }
     ],
