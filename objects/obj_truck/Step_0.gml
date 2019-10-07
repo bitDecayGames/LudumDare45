@@ -100,6 +100,7 @@ var oilSlickActive = alarm[1] > 0;
 if oilSlickActive {
 	accelerate = true;
 	decelerate = false;
+	phy_angular_velocity = 10 * turnSpeed;
 }
 
 if accelerate && !decelerate {
