@@ -7,7 +7,7 @@ for (var i = 0; i < playerCount; ++i) {
 		i, 
 		true, 
 		sc_random_character_name(), 
-		1000.0, 
+		0.0, 
 		0.1, 
 		0.1, 
 		0.1, 
@@ -16,7 +16,7 @@ for (var i = 0; i < playerCount; ++i) {
 		0.1, 
 		sc_pick_random_car_color(), 
 		sc_pick_random_portrait(), 
-		i < 1
+		false
 	);
 	global.player_place[i] = (playerCount - 1) - i;
 }
