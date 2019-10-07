@@ -3,7 +3,7 @@ if hitpoints <= 0 {
 	instance_destroy();
 }
 
-debugStr = "hp: " + string(hitpoints) + " | vun: " + string(alarm[0] < 0) + debugHitStr
+debugStr = "slick: " + string(alarm[1] > 0) + debugHitStr
 
 var turnLeft = false
 var turnRight = false
@@ -76,6 +76,13 @@ var xRot = dcos(rotation);
 var yRot = dsin(rotation);
 var xAccel = xRot * accelerationSpeed;
 var yAccel = yRot * accelerationSpeed;
+
+// Oil
+var oilSlickActive = alarm[1] > 0; 
+if oilSlickActive {
+	accelerate = true;
+	decelerate = false;
+}
 
 if accelerate && !decelerate {
 	forceX = xAccel;

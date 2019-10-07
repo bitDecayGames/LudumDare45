@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "1218a0d5-c2de-4a08-96d5-338f5805314c",
+            "Value": {
+                "id": "01412a04-dd8e-4502-a946-227c5fcb3ecc",
+                "resourcePath": "objects\\obj_oil\\obj_oil.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "12d4bd69-acf8-4e39-b02b-35b06a3458eb",
             "Value": {
                 "id": "1fc5e868-b9e1-4816-bdc6-e4fded7b7e6c",
