@@ -41,15 +41,18 @@ if (keyboard_check_pressed(vk_enter) > 0 || gamepad_button_check_pressed(0, gp_f
 			room_goto(rm_PlayerSelect)
 			break;
 		case 1:
-			game_end()
+			room_goto(rm_Credits);
 			break;
 		case 2:
-			room_goto(rm_RaceResults)
+			game_end()
 			break;
 		case 3:
-			room_goto(rm_Shop)
+			room_goto(rm_RaceResults)
 			break;
 		case 4:
+			room_goto(rm_Shop)
+			break;
+		case 5:
 			room_goto(rm_Game)
 			break;
 	}

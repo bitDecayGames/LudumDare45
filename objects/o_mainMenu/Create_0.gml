@@ -3,13 +3,16 @@
 menuX = x
 menuY = y
 
-buttonHeight = 32
+buttonHeight = 64
 
-button[0] = "Join Tournament"
-button[1] = "Quit"
-button[2] = "Test Race Results"
-button[3] = "Test Shop"
-button[4] = "Test Race Spawn"
+button = [
+	"Start",
+	"Credits",
+	"Quit",
+	"Test Race Results",
+	"Test Shop",
+	"Test Race Spawn",
+];
 
 menuCount = array_length_1d(button)
 
