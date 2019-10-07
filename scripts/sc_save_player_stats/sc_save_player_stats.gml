@@ -46,3 +46,5 @@ global.player_armor[slot] = 0;
 global.player_lap[slot] = 1;
 global.player_checkpoint[slot] = 0;
 global.player_last_checkpoint_time[slot] = -1
+
+global.player_kills[slot] = 0
