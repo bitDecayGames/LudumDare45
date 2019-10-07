@@ -594,7 +594,7 @@
             "Key": "6f4991d7-2777-4b1b-aa67-95c2bafaea2b",
             "Value": {
                 "id": "4b615e73-59df-4b49-b072-060ff8c6da8a",
-                "resourcePath": "objects\/o_storePowerUp_turbo\/o_storePowerUp_turbo.yy",
+                "resourcePath": "objects\/o_storePowerUp_shield\/o_storePowerUp_shield.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -668,14 +668,6 @@
                 "id": "78b9372f-7a92-496e-be1d-4334d4ad0a90",
                 "resourcePath": "objects\/o_mainMenu\/o_mainMenu.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "7dc05225-31fd-4f26-a00a-b67e27203251",
-            "Value": {
-                "id": "5a425792-c074-40ba-9cbe-94de0ceed907",
-                "resourcePath": "sprites\/sp_shopOilSlick_icon\/sp_shopOilSlick_icon.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

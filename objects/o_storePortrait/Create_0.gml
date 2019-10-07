@@ -3,9 +3,10 @@
 textOffsetX = 0;
 textOffsetY = 0;
 
-iconOffsetX = 0;
-iconOffsetY = sprite_height;
+iconOffsetX = 40;
+iconOffsetY = sprite_height + 40;
 iconSpacing = 50;
+iconScale = 0.3;
 
 slot = global.store_current_slot;
 name = global.player_name[slot];

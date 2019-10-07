@@ -33,7 +33,7 @@
             "mvc": "1.0",
             "objectId": "cfc95762-bcb8-4a6f-a742-d52edb4b0f7e",
             "propertyId": "b5141c91-eced-43d9-a359-1e9fa46ba94e",
-            "value": "Health"
+            "value": "Max Health"
         },
         {
             "id": "0fec6437-3549-41f7-a426-a9adad8c64d8",

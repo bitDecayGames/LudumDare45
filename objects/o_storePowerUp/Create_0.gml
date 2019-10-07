@@ -2,11 +2,11 @@
 
 isSelected = false
 
-textOffsetX = sprite_width / 2.0;
-textOffsetY = -30;
+textOffsetX = 0;
+textOffsetY = -sprite_height / 2.0 - 50;
 
-costOffsetX = sprite_width / 2.0;
-costOffsetY = sprite_height - 10;
+costOffsetX = 0;
+costOffsetY = sprite_height / 2.0 + 30;
 
 slot = global.store_current_slot;
 
