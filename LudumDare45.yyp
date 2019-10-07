@@ -447,6 +447,14 @@
             }
         },
         {
+            "Key": "6d1d4b15-95d6-43d8-944f-0114ed2e9b88",
+            "Value": {
+                "id": "5886b168-aa35-4f02-a44b-c35976fdc424",
+                "resourcePath": "objects\/o_raceCtrl\/o_raceCtrl.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6e4658fb-eeaf-4704-b3a0-d83bbed39c9a",
             "Value": {
                 "id": "e84edd79-19b8-4dc7-8d10-a06aa112b287",

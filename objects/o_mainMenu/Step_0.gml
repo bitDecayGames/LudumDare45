@@ -49,5 +49,8 @@ if (keyboard_check_pressed(vk_enter) > 0 || gamepad_button_check_pressed(0, gp_f
 		case 3:
 			room_goto(rm_Shop)
 			break;
+		case 4:
+			room_goto(rm_Game)
+			break;
 	}
 }
