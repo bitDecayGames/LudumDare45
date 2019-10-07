@@ -3,16 +3,31 @@ var turnRight = false
 var accelerate = false
 var decelerate = false
 
+// Check checkpoint/lap/navigation points
+var pathPointX = path_get_point_x(path, pointIdx);
+var pathPointY = path_get_point_y(path, pointIdx);
+debugTargetPointX = pathPointX;
+debugTargetPointY = pathPointY;
+
+var nearPathPoint = point_distance(x, y, pathPointX, pathPointY) < pointDistance;
+if(nearPathPoint) {
+	pointIdx++;
+	global.player_checkpoint[slot] = global.player_checkpoint[slot] + 1;
+	global.player_last_checkpoint_time[slot] = current_time;
+	
+	if(pointIdx >= numPoints) {
+		pointIdx = 0;
+		global.player_lap[slot] = global.player_lap[slot] + 1;
+	}
+}
+
 if (isPlayer) {
 	turnLeft = keyboard_check(vk_left) || gamepad_button_check(slot, gp_padl);
 	turnRight = keyboard_check(vk_right) || gamepad_button_check(slot, gp_padr);
 	accelerate = keyboard_check(vk_up) || gamepad_button_check(slot, gp_face1);
 	decelerate = keyboard_check(vk_down) || gamepad_button_check(slot, gp_face2);
 } else {
-	// AI
-	var pathPointX = path_get_point_x(path, pointIdx);
-	var pathPointY = path_get_point_y(path, pointIdx);
-	
+	// AI	
 	// Point at objective
 	var steerDir = point_direction(x, y, pathPointX, pathPointY);
 	var steerRot = angle_difference(-phy_rotation, steerDir);
@@ -32,17 +47,6 @@ if (isPlayer) {
 		decelerate = true;
 	}
 	accelerate = !decelerate;
-
-	debugTargetPointX = pathPointX;
-	debugTargetPointY = pathPointY;
-
-	var nearPathPoint = point_distance(x, y, pathPointX, pathPointY) < pointDistance; /* Change this if necessary */
-	if(nearPathPoint) {
-	    pointIdx++;
-	    if(pointIdx >= numPoints) {
-	        pointIdx = 0;
-	    }
-	}
 }
 
 var rotation = phy_rotation;
@@ -91,8 +95,6 @@ var velDir = point_direction(x, y, x + phy_speed_x, y + phy_speed_y);
 var rotDir = point_direction(x, y, x + xRot, y + yRot);
 var skidRot = angle_difference(velDir, rotDir);
 var gottaGoFast = abs(phy_speed_x) > minSkidSpeed || abs(phy_speed_y) > minSkidSpeed
-
-debugStr = string(round(skidRot));
 
 if abs(skidRot) > 30 && gottaGoFast {
 	var arrLen = array_height_2d(wheelArray);
