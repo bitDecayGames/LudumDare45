@@ -1,3 +1,3 @@
 /// @description save stat
 
-global.player_top_speed[global.store_current_slot] = currentStatValue;
+global.player_turning[global.store_current_slot] = currentStatValue;
