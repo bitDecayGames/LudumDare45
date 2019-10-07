@@ -19,7 +19,7 @@ image_index = 2
 accelerationSpeed = 10 + 10 * global.player_acceleration[slot];
 turnSpeed = 100 + 50 * global.player_turning[slot];
 damagePotential = 1 + 1 * global.player_damage_potential[slot];
-hitpoints = 10 + 100 * global.player_hitpoints[slot];
+hitpoints = 40 + 50 * global.player_hitpoints[slot];
 maxHitpoints = hitpoints;
 
 minSkidSpeed = 0.5

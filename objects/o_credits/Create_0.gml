@@ -1,17 +1,15 @@
 /// @description credit strings here
 credits = [
 	"PROGRAMMING",
-	"",
 	"Jake Crusty-Tofu",
 	"Joseph Yannessa",
 	"Michael Wingfield",
 	"",
 	"ART",
 	"Jonny Rold",
-	"Michael Wingfield",
 	"",
 	"SOUND",
-	"Facel",
+	"Faysal",
 	"",
 	"",
 	"Thanks for playing!",
