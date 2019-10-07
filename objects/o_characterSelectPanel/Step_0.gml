@@ -6,8 +6,6 @@ if (!hasActivePlayer) {
 	if (becomeKeyboard || becomeGamepad > 0) {
 		
 		hasActivePlayer = true;
-		portraitObjId.visible = hasActivePlayer;
-		carObjId.visible = hasActivePlayer;
 		if (becomeKeyboard) {
 			image_index = 3; // show keyboard prompts
 		} else {
@@ -17,30 +15,21 @@ if (!hasActivePlayer) {
 		playerName = sc_random_character_name();
 		
 		var portraitIndex = sc_pick_random_portrait();
-		portraitObjId.image_index = portraitIndex * 3 + 2;
 		
 		var rndColor = sc_pick_random_car_color();
-		carObjId.color1_r = rndColor[0];
-		carObjId.color1_g = rndColor[1];
-		carObjId.color1_b = rndColor[2];
-		carObjId.color2_r = rndColor[3];
-		carObjId.color2_g = rndColor[4];
-		carObjId.color2_b = rndColor[5];
-		carObjId.color3_r = rndColor[6];
-		carObjId.color3_g = rndColor[7];
-		carObjId.color3_b = rndColor[8];
+		color = rndColor;
 		
 		sc_save_player_stats(
 			slot, 
 			hasActivePlayer, 
 			playerName, 
 			0.0, 
-			0.0, 
-			0.0, 
-			0.0, 
-			0.0, 
-			100.0, 
-			10.0, 
+			0.1, 
+			0.1, 
+			0.1, 
+			0.1, 
+			0.1, 
+			0.1, 
 			rndColor, 
 			portraitIndex,
 			true
@@ -51,8 +40,6 @@ if (!hasActivePlayer) {
 	var exitGamepad = gamepad_button_check_pressed(slot, gp_face2);
 	if (exitKeyboard || exitGamepad) {
 		hasActivePlayer = false;
-		portraitObjId.visible = hasActivePlayer;
-		carObjId.visible = hasActivePlayer;
 		
 		if (slot == 0){
 			image_index = 0;
@@ -72,20 +59,10 @@ if (!hasActivePlayer) {
 		playerName = sc_random_character_name();
 		
 		// get random portrait index
-		var portraitIndex = sc_pick_random_portrait();
-		portraitObjId.image_index = portraitIndex;
-		global.player_portrait = portraitIndex;
+		global.player_portrait[slot] = sc_pick_random_portrait();
 		
 		var rndColor = sc_pick_random_car_color();
-		carObjId.color1_r = rndColor[0];
-		carObjId.color1_g = rndColor[1];
-		carObjId.color1_b = rndColor[2];
-		carObjId.color2_r = rndColor[3];
-		carObjId.color2_g = rndColor[4];
-		carObjId.color2_b = rndColor[5];
-		carObjId.color3_r = rndColor[6];
-		carObjId.color3_g = rndColor[7];
-		carObjId.color3_b = rndColor[8];
+		color = rndColor;
 		global.player_colors[slot] = rndColor;
 	}
 }
