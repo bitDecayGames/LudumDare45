@@ -15,3 +15,12 @@ for (var i = 0; i < playerCount; ++i){
 	}
 	curY[i] = cur;
 }
+
+// End race
+var numLaps = 3;
+for (var i = 0; i < playerCount; ++i) {
+	var lap = global.player_lap[i];
+	if lap >= numLaps + 1 {
+		room_goto(rm_RaceResults);
+	}
+}
