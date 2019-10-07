@@ -4,6 +4,7 @@
 
 
 // ignore this stuff (shaders, amiright!?)
+// excuuuuuse me!!
 
 shader = shd_colorMask;
 u_red_tint = shader_get_uniform(shader, "red_tint");

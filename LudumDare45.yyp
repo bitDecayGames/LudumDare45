@@ -607,6 +607,14 @@
             }
         },
         {
+            "Key": "6b353fec-5348-46fb-b85c-c148d55953b5",
+            "Value": {
+                "id": "f4db5f4d-faea-4abc-a670-06aad19d4994",
+                "resourcePath": "scripts\/sc_getTrackAlignedPath\/sc_getTrackAlignedPath.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "6c005cab-e2be-4fc7-b2a3-5fed22ace264",
             "Value": {
                 "id": "b48e370c-0885-4a68-a41e-a98b13d2518c",
@@ -1213,7 +1221,8 @@
         "ea18e720-cbb0-4288-94dc-fcf223bb15ea",
         "4edfeb7c-d679-4c38-9ef7-66d0617ea552",
         "1b71864e-7545-4234-996c-a326b0b99b4f",
-        "f07e98bd-6043-4a52-afc6-fadca7713013"
+        "f07e98bd-6043-4a52-afc6-fadca7713013",
+        "6b353fec-5348-46fb-b85c-c148d55953b5"
     ],
     "tutorial": ""
 }

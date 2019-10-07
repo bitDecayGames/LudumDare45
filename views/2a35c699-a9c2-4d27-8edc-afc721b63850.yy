@@ -9,7 +9,8 @@
         "ea18e720-cbb0-4288-94dc-fcf223bb15ea",
         "4edfeb7c-d679-4c38-9ef7-66d0617ea552",
         "1b71864e-7545-4234-996c-a326b0b99b4f",
-        "f07e98bd-6043-4a52-afc6-fadca7713013"
+        "f07e98bd-6043-4a52-afc6-fadca7713013",
+        "6b353fec-5348-46fb-b85c-c148d55953b5"
     ],
     "filterType": "GMScript",
     "folderName": "tileGen",

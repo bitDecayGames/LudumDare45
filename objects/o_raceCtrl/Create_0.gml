@@ -29,15 +29,7 @@ playerCount = array_length_1d(global.player_name);
 targetY = [];
 curY = [];
 
-for (var i = 0; i < playerCount; ++i){
-	with(instance_create(x + irandom(10), y + irandom(10), obj_truck)){
-		slot = i;
-		event_user(0); // this is basically the Init method since Create gets called before this block
-	}
-	
-	targetY[i] = top + i * placeSpace;
-	curY[i] = top + i * placeSpace;
-}
+
 
 shader = shd_colorMask;
 u_red_tint = shader_get_uniform(shader, "red_tint");

@@ -13,7 +13,7 @@ decelerate = false
 
 // AI stats
 // https://www.reddit.com/r/gamemaker/comments/4ieosj/can_i_use_game_maker_pathfinding_and_physics_at/d2xjaa7/
-path = path_carProto;
+path = global.trackPath;
 // mp_grid_path(path); // assumed path points to the goal
 numPoints = path_get_number(path); // get the number of nodes of that path
 pointIdx = 0;// path to the first node first... firstly.

@@ -1,4 +1,5 @@
 /// @description show player places
+if(array_length_1d(curY) == 0) {return;}
 
 for (var i = 0; i < playerCount; ++i){
 	
