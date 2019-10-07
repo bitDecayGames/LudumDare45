@@ -20,8 +20,8 @@ if (keyboardContinue || gamepadContinue) {
 }
 
 var vAxis = gamepad_axis_value(slot, gp_axislv);
-var up = (slot == 0 && keyboard_check_pressed(vk_up)) || gamepad_button_check_pressed(slot, gp_padu) || (!gamepadStickReset && vAxis > threshold);
-var down = (slot == 0 && keyboard_check_pressed(vk_down)) || gamepad_button_check_pressed(slot, gp_padd) || (!gamepadStickReset && vAxis < -threshold);
+var up = (slot == 0 && keyboard_check_pressed(vk_up)) || gamepad_button_check_pressed(slot, gp_padu) || (!gamepadStickReset && vAxis < -threshold);
+var down = (slot == 0 && keyboard_check_pressed(vk_down)) || gamepad_button_check_pressed(slot, gp_padd) || (!gamepadStickReset && vAxis > threshold);
 
 if (up) {
 	global.store_current_selection_index -= 1;
