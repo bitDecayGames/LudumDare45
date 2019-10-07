@@ -1,4 +1,9 @@
-debugStr = "hp: " + string(hitpoints) + " | vun: " + string(canBeHit) + debugHitStr
+// Die!
+if hitpoints <= 0 {
+	instance_destroy();
+}
+
+debugStr = "hp: " + string(hitpoints) + " | vun: " + string(alarm[0] < 0) + debugHitStr
 
 var turnLeft = false
 var turnRight = false

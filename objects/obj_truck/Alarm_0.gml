@@ -1,1 +1,0 @@
-canBeHit = true;
