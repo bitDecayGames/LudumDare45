@@ -1,3 +1,5 @@
+debugStr = "hp: " + string(hitpoints) + " | vun: " + string(canBeHit) + debugHitStr
+
 var turnLeft = false
 var turnRight = false
 var accelerate = false

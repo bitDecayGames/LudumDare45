@@ -2,6 +2,9 @@
 
 debug = false
 debugStr = ""
+debugHitStr = ""
+debugHitX = 0
+debugHitY = 0 
 debugTargetPointX = 0
 debugTargetPointY = 0
 debugForceX = 0
@@ -17,6 +20,9 @@ accelerationSpeed = 5 + 5 * global.player_acceleration[slot];
 turnSpeed = 50 + 50 * global.player_turning[slot];
 damagePotential = 1 + 1 * global.player_damage_potential[slot];
 hitpoints = 10 + 100 * global.player_hitpoints[slot];
+
+// Collisions/damage
+canBeHit = true;
 
 minSkidSpeed = 0.5
 

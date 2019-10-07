@@ -25,4 +25,8 @@ if (debug) {
 	// Facing
 	draw_set_color(c_blue);
 	draw_line_width(x, y, x + debugFaceX * 30, y + debugFaceY * 30, 3);
+	
+	// Hit
+	draw_set_color(c_yellow);
+	draw_arrow(x, y, x + debugHitX * 30, y + debugHitY * 30, 10);
 }
