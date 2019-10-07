@@ -4,7 +4,36 @@
     "mvc": "1.0",
     "name": "obj_oil",
     "eventList": [
-        
+        {
+            "id": "3c49c043-a710-4681-b436-64dfa83137af",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "1218a0d5-c2de-4a08-96d5-338f5805314c"
+        },
+        {
+            "id": "aad6dd29-4aa6-4438-868a-10fd38ffb3a3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
+            "m_owner": "1218a0d5-c2de-4a08-96d5-338f5805314c"
+        },
+        {
+            "id": "6ec76d76-f87f-4b9c-91ee-0cac1e3bec1f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "1218a0d5-c2de-4a08-96d5-338f5805314c"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

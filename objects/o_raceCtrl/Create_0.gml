@@ -38,4 +38,8 @@ u_red_tint = shader_get_uniform(shader, "red_tint");
 u_green_tint = shader_get_uniform(shader, "green_tint");
 u_blue_tint = shader_get_uniform(shader, "blue_tint");
 
-
+for (var i = 0; i < playerCount; ++i) {
+	global.player_lap[i] = 1;
+	global.player_checkpoint[i] = 0;
+	global.player_last_checkpoint_time[i] = -1	
+}

@@ -26,9 +26,11 @@ minSkidSpeed = 0.5
 
 // Can be hit
 alarm[0] = 0;
-// Oil
+// Oil hit
 alarm[1] = 0;
 prevLinDamp = phy_linear_damping;
+// Oil create
+alarm[2] = 0;
 
 // Hack for laps
 incrLap = false;
