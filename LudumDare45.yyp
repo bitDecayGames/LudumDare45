@@ -31,14 +31,6 @@
     },
     "resources": [
         {
-            "Key": "01663172-58e3-47a0-a473-6ee06a95a283",
-            "Value": {
-                "id": "60bee6f3-a2a8-4c7f-9aa7-b62d0930c960",
-                "resourcePath": "objects\/o_characterSelectCar\/o_characterSelectCar.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "02e95228-5730-41e3-8600-6ebfcf2103e0",
             "Value": {
                 "id": "152564d4-b3dd-4d39-8a96-5528b8e63e56",
@@ -356,14 +348,6 @@
                 "id": "23089afd-7ff2-484a-b92d-144be3a61ea1",
                 "resourcePath": "objects\/obj_skid_mark\/obj_skid_mark.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "54c89734-1266-450d-84af-24a47b3e2a89",
-            "Value": {
-                "id": "fa083c0d-22ff-49f6-b9ec-39b0094e30b3",
-                "resourcePath": "sprites\/sp_characterSelectCar\/sp_characterSelectCar.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -764,14 +748,6 @@
                 "id": "1cd60d85-93bb-4219-b890-1821990135dc",
                 "resourcePath": "scripts\/action_set_relative\/action_set_relative.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "eca291a6-61d4-45af-a9f8-41ee32fb7aef",
-            "Value": {
-                "id": "506438bc-246f-484d-93fa-2c76d978e634",
-                "resourcePath": "objects\/o_characterSelectPortrait\/o_characterSelectPortrait.yy",
-                "resourceType": "GMObject"
             }
         },
         {
