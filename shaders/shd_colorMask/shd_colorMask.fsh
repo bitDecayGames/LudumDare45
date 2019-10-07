@@ -21,8 +21,9 @@ void main()
 	
 	// Scan lines
 	vec3 mask = packed_tex;
-	if(uptime > 0) {
-		mask = vec3((mod(uptime * 100, 3) + .5) * packed_tex);
+	float delta = mod(uptime * 100.0, 3.0);
+	if(uptime > 0.0) {
+		mask = vec3((delta + 0.5) * packed_tex);
 	}
 
 	gl_FragColor = vec4(mask, base_col.a);

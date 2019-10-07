@@ -13,9 +13,9 @@ button = [
 	"Start",
 	"Credits",
 	"Quit",
-	"Test Race Results",
-	"Test Shop",
-	"Test Race Spawn",
+//	"Test Race Results",
+//	"Test Shop",
+//	"Test Race Spawn",
 ];
 
 menuCount = array_length_1d(button)
