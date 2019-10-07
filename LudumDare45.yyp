@@ -687,6 +687,14 @@
             }
         },
         {
+            "Key": "b3ececd1-bdf7-4eda-aa2d-7ecf310a1e7b",
+            "Value": {
+                "id": "715e5283-0042-4835-8a58-2c1edde465de",
+                "resourcePath": "scripts\/sc_calculate_place\/sc_calculate_place.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bdb180db-d5e7-4d53-a25b-3661d0e40e0e",
             "Value": {
                 "id": "8f28f79b-b488-46d3-a49d-710dc113f963",
@@ -888,7 +896,8 @@
         "1fd48176-cfff-4cfc-ba9d-34f77f4c4526",
         "3f911571-4ca3-4de1-a9e2-dbf4e9e12313",
         "4bbc42ce-b2f7-4419-8f32-d501fac6b131",
-        "fafd4c5c-8e74-4be0-8741-11ca09e46245"
+        "fafd4c5c-8e74-4be0-8741-11ca09e46245",
+        "b3ececd1-bdf7-4eda-aa2d-7ecf310a1e7b"
     ],
     "tutorial": ""
 }
