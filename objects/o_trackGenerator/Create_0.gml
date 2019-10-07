@@ -69,6 +69,11 @@ physics_fixture_set_chain_shape(levelFix1, 1);
 levelFix2 = physics_fixture_create();
 physics_fixture_set_chain_shape(levelFix2, 1);
 
+trackEdge1 = path_add()
+path_set_kind(trackEdge1, 1)
+trackEdge2 = path_add()
+path_set_kind(trackEdge2, 1)
+
 for(var i=0; i<=1; i+=incr){
 	var px = path_get_x(levelPath, i mod 1);
 	var py = path_get_y(levelPath, i mod 1);
@@ -93,6 +98,9 @@ for(var i=0; i<=1; i+=incr){
 	//Fixture
 	physics_fixture_add_point(levelFix1, px1, py1);
 	physics_fixture_add_point(levelFix2, px2, py2);
+	
+	path_add_point(trackEdge1, px1, py1, 100);
+	path_add_point(trackEdge2, px2, py2, 100);
 }
 
 physics_fixture_bind(levelFix1, id);
