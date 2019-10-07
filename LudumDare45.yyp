@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "081fa9a3-e43b-42a1-9ccf-15b657dd5119",
+            "Value": {
+                "id": "a003357a-2153-4931-bcd0-480abccd01a0",
+                "resourcePath": "sprites\/sp_smoke\/sp_smoke.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0d92053f-9678-4c5d-b553-67a22b8a87e7",
             "Value": {
                 "id": "96b61d93-e4e1-4bf1-ab04-2ec2f5ccc052",
@@ -132,6 +140,14 @@
                 "id": "de7d5466-3db2-4de0-9242-4241410791e0",
                 "resourcePath": "rooms\/rm_TournamentResults\/rm_TournamentResults.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "27c50371-5397-4490-a9c8-435856fbc306",
+            "Value": {
+                "id": "aa9048c5-c8c5-4c46-9ce7-af63741409ae",
+                "resourcePath": "sprites\/sp_sparks\/sp_sparks.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -220,6 +236,22 @@
                 "id": "4f0ceacb-1c3c-4466-9638-7bf04292a12f",
                 "resourcePath": "fonts\/fnt_arial\/fnt_arial.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "3caa5969-5f48-4ea3-ada0-293f1790f3d3",
+            "Value": {
+                "id": "688cbb43-4739-4eb6-abd1-19fc9573f98e",
+                "resourcePath": "sprites\/sp_oil\/sp_oil.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3f013f6f-2cb4-42b9-9d82-0dd6601589c0",
+            "Value": {
+                "id": "0bafbb00-e5f8-4362-b729-ed9f2f6ac203",
+                "resourcePath": "sprites\/sp_background\/sp_background.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -591,6 +623,14 @@
             }
         },
         {
+            "Key": "a1c9002a-4f96-435d-8c67-8fb708c7aecb",
+            "Value": {
+                "id": "f65aa15f-e70e-43c3-957c-0c9f55586040",
+                "resourcePath": "sprites\/sp_title\/sp_title.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a2e0c4b8-4169-4ec2-9cce-bfbcf35903a6",
             "Value": {
                 "id": "effdd9f0-0fd8-4589-8cd6-983adcf03025",
@@ -639,6 +679,22 @@
             }
         },
         {
+            "Key": "ad7649fd-c835-4430-be6e-ca83821efd8f",
+            "Value": {
+                "id": "8d7c8864-abb4-4de2-8df7-53246f9b649b",
+                "resourcePath": "sprites\/sp_explosion\/sp_explosion.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b0c79c75-a7b6-455c-a0a8-6e4af5d5a485",
+            "Value": {
+                "id": "d916a720-c262-4d24-9bfe-77bf2f446355",
+                "resourcePath": "sprites\/sp_armor\/sp_armor.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bdb180db-d5e7-4d53-a25b-3661d0e40e0e",
             "Value": {
                 "id": "8f28f79b-b488-46d3-a49d-710dc113f963",
@@ -668,6 +724,14 @@
                 "id": "be139b3e-154a-4060-9e55-f70cdbf78323",
                 "resourcePath": "objects\/o_storeStat_hitpoints\/o_storeStat_hitpoints.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c9572ac6-d408-46c4-a532-0b95a4ed6c8d",
+            "Value": {
+                "id": "6fdaa7dc-9d62-4505-8450-c8cb51ed2e2a",
+                "resourcePath": "sprites\/sp_spewOil\/sp_spewOil.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
