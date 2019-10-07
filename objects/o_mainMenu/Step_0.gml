@@ -35,7 +35,8 @@ else if (selectedIndex < 0) selectedIndex = menuCount - 1
 
 
 
-if (keyboard_check_pressed(vk_enter) > 0 || gamepad_button_check_pressed(0, gp_face1)){
+if keyboard_check_pressed(vk_space) || (keyboard_check_pressed(vk_enter) || gamepad_button_check_pressed(0, gp_face1)){
+	audio_play_sound(sfx_select, 0, false);
 	switch (selectedIndex) {
 		case 0:
 			room_goto(rm_PlayerSelect)

@@ -41,6 +41,7 @@ if (isPlayer) {
 	accelerate = keyboard_check(vk_up) || gamepad_button_check(slot, gp_face1);
 	decelerate = keyboard_check(vk_down) || gamepad_button_check(slot, gp_face2);
 	dropOilSlick = keyboard_check(vk_space) || gamepad_button_check(slot, gp_face3);
+	if (accelerate) audio_play_sound(sfx_carmotor, 100, false);
 } else {
 	// AI	
 	// Point at objective

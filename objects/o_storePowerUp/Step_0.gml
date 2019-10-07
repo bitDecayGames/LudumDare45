@@ -17,8 +17,10 @@ if (isSelected && available && (keyboardSelect || gamepadSelect)) {
 		money -= cost;
 		curCount += 1;
 		global.player_money[slot] = money;
-		
+		audio_play_sound(sfx_cash, 0, false);
 		event_user(0); // trigger saving the stat
+	} else {
+		audio_play_sound(sfx_hover, 0, false);	
 	}
 }
 if (curCount >= maxCount) {

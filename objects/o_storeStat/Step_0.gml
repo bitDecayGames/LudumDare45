@@ -13,6 +13,7 @@ if (isSelected && available && (keyboardSelect || gamepadSelect)) {
 	if (cost <= money) {
 		money -= cost;
 		global.player_money[slot] = money;
+		audio_play_sound(sfx_cash, 0, false);
 		
 		currentStatValue += 1.0 / totalPills;
 		if (currentStatValue > maxStatValue) {
@@ -21,6 +22,8 @@ if (isSelected && available && (keyboardSelect || gamepadSelect)) {
 		}
 		
 		event_user(0); // trigger saving the stat
+	} else {
+		audio_play_sound(sfx_hover, 0, false);	
 	}
 }
 
