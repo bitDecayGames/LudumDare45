@@ -711,6 +711,14 @@
             }
         },
         {
+            "Key": "72ded606-d58f-4ffb-aeb4-b7169ea59beb",
+            "Value": {
+                "id": "2c10124d-6f76-4355-907f-852e127430c0",
+                "resourcePath": "sounds\\bgm_shotguneveryround\\bgm_shotguneveryround.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "73fec724-d89c-4b0a-95af-d94794a8fe5c",
             "Value": {
                 "id": "15804723-d028-495a-b55b-e496ee96dc52",
