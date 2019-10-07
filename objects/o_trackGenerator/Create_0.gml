@@ -1,6 +1,6 @@
 /// @description Insert description here
-// You can write your code in this editor
 randomize();
+depth = 10;
 
 width = 6;
 height = 4;
