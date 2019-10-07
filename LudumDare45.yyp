@@ -122,7 +122,7 @@
             "Key": "1218a0d5-c2de-4a08-96d5-338f5805314c",
             "Value": {
                 "id": "01412a04-dd8e-4502-a946-227c5fcb3ecc",
-                "resourcePath": "objects\\obj_oil\\obj_oil.yy",
+                "resourcePath": "objects\/obj_oil\/obj_oil.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1111,6 +1111,14 @@
             }
         },
         {
+            "Key": "f07e98bd-6043-4a52-afc6-fadca7713013",
+            "Value": {
+                "id": "fe78e5fb-6d3f-4132-944e-ceb10797d0ba",
+                "resourcePath": "scripts\/sc_getOrderedVacancies\/sc_getOrderedVacancies.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f0af80f9-119e-49c1-906d-7e30241a099a",
             "Value": {
                 "id": "e0ed2545-8d0c-456f-80bc-50ba61499fdc",
@@ -1204,7 +1212,8 @@
         "c0123dda-17df-4db9-93c5-0ce0c7f8d697",
         "ea18e720-cbb0-4288-94dc-fcf223bb15ea",
         "4edfeb7c-d679-4c38-9ef7-66d0617ea552",
-        "1b71864e-7545-4234-996c-a326b0b99b4f"
+        "1b71864e-7545-4234-996c-a326b0b99b4f",
+        "f07e98bd-6043-4a52-afc6-fadca7713013"
     ],
     "tutorial": ""
 }

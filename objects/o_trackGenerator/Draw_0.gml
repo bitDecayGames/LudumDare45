@@ -26,8 +26,21 @@ for(var i = 0; i < array_length_1d(orderedTrack); i++) {
 	}
 	var str = string(i) + " " + string(dirString[grid[gridPos]]) + string(rot) + " " + string(gridPos) + " " + string(startX) + ", " + string(startY)
 	draw_text(startX, startY, str);
-	show_debug_message("drawing " + string(i))
 
-	draw_sprite_ext(trackPiece, 0, startX + (chunk_size / 2), startY + (chunk_size / 2), 1, 1, rot, c_white, 1);
+	draw_sprite_ext(trackPiece, 0, startX + offset, startY + offset, 1, 1, rot, c_white, 1);
 }
-	show_debug_message("drawing complete")
+
+
+for(var i = 0; i < array_length_1d(grid); i++) {
+	var spr = orderedVacantSprites[i]
+	if(spr == 0) continue
+	
+	var startX = (i mod width) * chunk_size
+	var startY = floor(i / width) * chunk_size
+	
+	draw_text(startX, startY, "Sprite " + string(i));
+	// var vacantSprite = vacantSprites[i]; //ds_list_read(vacantSpriteList, vacantIdx++)
+	//show_debug_message(string(vacantSprite))
+	
+	draw_sprite_ext(spr, 0, startX + offset, startY + offset, 1, 1, 0, c_white, 1);
+}
